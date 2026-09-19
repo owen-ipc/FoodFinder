@@ -26,7 +26,7 @@ export default function Home() {
       <footer className="foot">
         {items.length.toLocaleString()} items priced · {exact.toLocaleString()}{" "}
         confirmed against a live Target listing · Pittsburgh stores, September
-        2026<br><i>Made for SteelHacks XIII</i>
+        2026<br /><i>Made for SteelHacks XIII</i>
       </footer>
     </main>
   );
