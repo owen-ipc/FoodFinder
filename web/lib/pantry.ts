@@ -171,7 +171,6 @@ const SYNONYMS: Record<string, string[]> = {
   "chicken breasts": ["chicken", "breast"],
   "ground beef": ["ground", "beef"],
   "ground turkey": ["ground", "turkey"],
-  "bacon": ["bacon"],
   "eggs": ["eggs"],
   "egg": ["eggs"],
   "butter": ["butter"],
@@ -183,7 +182,6 @@ const SYNONYMS: Record<string, string[]> = {
   "onion": ["onion"],
   "onions": ["onion"],
   "flour": ["flour"],
-  "sugar": ["sugar"],
   "rice": ["rice"],
   "water": [],
 };
