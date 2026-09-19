@@ -1,0 +1,1073 @@
+item_name,category,unit,price,source
+"Grade A Large Eggs, 6ct - Good & Gather",Dairy & Eggs,6 ct,0.99,target_live
+"Grade A Large Eggs, 12ct - Good & Gather",Dairy & Eggs,12 ct,1.49,target_live
+"Grade A Large Eggs, 18ct - Good & Gather",Dairy & Eggs,18 ct,2.49,target_live
+"Grade A Large Eggs, 30ct - Good & Gather",Dairy & Eggs,30 ct,3.99,target_live
+"Grade A Extra Large Eggs, 12ct - Good & Gather",Dairy & Eggs,12 ct,1.89,target_live
+"Cage-Free Large White Eggs, 12ct - Good & Gather",Dairy & Eggs,12 ct,1.49,target_live
+"Cage-Free Large White Eggs, 18ct - Good & Gather",Dairy & Eggs,18 ct,2.19,target_live
+"Cage-Free Large Brown Eggs, 12ct - Good & Gather",Dairy & Eggs,12 ct,2.69,target_live
+"Organic Cage-Free Large Brown Eggs, 12ct - Good & Gather",Dairy & Eggs,12 ct,3.99,target_live
+"Organic Cage-Free Large Brown Eggs, 6ct - Good & Gather",Dairy & Eggs,6 ct,2.59,target_live
+"Liquid Egg Whites, 32oz - Good & Gather",Dairy & Eggs,32 oz,6.59,target_live
+"Liquid Egg Substitute, 32oz - Good & Gather",Dairy & Eggs,32 oz,6.89,target_live
+"Hard Cooked Eggs, 2ct - Good & Gather",Dairy & Eggs,2 ct,2.29,target_live
+"Vitamin D Whole Milk, 1 gal - Good & Gather",Dairy & Eggs,1 gal,2.99,target_live
+"2% Reduced Fat Milk, 1 gal - Good & Gather",Dairy & Eggs,1 gal,2.99,target_live
+"1% Low Fat Milk, 1 gal - Good & Gather",Dairy & Eggs,1 gal,2.99,target_live
+"Skim Fat Free Milk, 1 gal - Good & Gather",Dairy & Eggs,1 gal,2.99,target_live
+"Vitamin D Whole Milk, 0.5 gal - Good & Gather",Dairy & Eggs,0.5 gal,1.89,target_live
+"2% Reduced Fat Milk, 0.5 gal - Good & Gather",Dairy & Eggs,0.5 gal,1.99,target_live
+"Organic Whole Milk, 0.5 gal - Good & Gather",Dairy & Eggs,0.5 gal,3.99,target_live
+"Organic 2% Milk, 0.5 gal - Good & Gather",Dairy & Eggs,0.5 gal,3.99,target_live
+"Lactose Free 2% Milk, 0.5 gal - Good & Gather",Dairy & Eggs,0.5 gal,3.29,target_live
+"Lactose-Free 2% Ultra-Filtered Milk, 52 fl oz - Good & Gather",Dairy & Eggs,52 fl oz,3.99,target_live
+"Unsweetened Almond Milk, 0.5 gal - Good & Gather",Dairy & Eggs,0.5 gal,2.69,target_live
+"Unsweetened Vanilla Almond Milk, 0.5 gal - Good & Gather",Dairy & Eggs,0.5 gal,2.69,target_live
+"Half & Half, 16 fl oz - Good & Gather",Dairy & Eggs,16 fl oz,2.05,target_delivery_app
+"Sour Cream, 8oz - Good & Gather",Dairy & Eggs,8 oz,1.48,target_delivery_app
+"Salted Spreadable Butter, 8oz - Good & Gather",Dairy & Eggs,8 oz,1.69,target_live
+"4% Small Curd Cottage Cheese, 24oz - Good & Gather",Dairy & Eggs,24 oz,2.99,target_live
+"Shredded Mild Cheddar Cheese, 8oz - Good & Gather",Cheese,8 oz,1.99,target_live
+"Shredded Sharp Cheddar Cheese, 8oz - Good & Gather",Cheese,8 oz,1.99,target_live
+"Shredded Mozzarella Cheese, 8oz - Good & Gather",Cheese,8 oz,1.99,target_live
+"Shredded Mozzarella Cheese, 32oz - Good & Gather",Cheese,32 oz,6.99,target_live
+"Shredded Mexican-Style Cheese, 8oz - Good & Gather",Cheese,8 oz,1.99,target_live
+"Shredded Mexican-Style Cheese, 16oz - Good & Gather",Cheese,16 oz,3.49,target_live
+"Shredded Mexican-Style Cheese, 32oz - Good & Gather",Cheese,32 oz,6.99,target_live
+"Shredded Reduced Fat Mexican-Style Cheese, 7oz - Good & Gather",Cheese,7 oz,1.99,target_live
+"Shredded Colby Jack Cheese, 8oz - Good & Gather",Cheese,8 oz,1.99,target_live
+"Finely Shredded Parmesan Cheese, 6oz - Good & Gather",Cheese,6 oz,1.99,target_live
+"Grated Parmesan Cheese Cup, 5oz - Good & Gather",Cheese,5 oz,3.79,target_live
+"Sharp Cheddar Cheese Block, 8oz - Good & Gather",Cheese,8 oz,1.89,target_live
+"Mild Cheddar Deli Sliced Cheese, 8oz/12 slices - Good & Gather",Cheese,8 oz,1.69,target_live
+"Sharp Cheddar Deli Sliced Cheese, 8oz/12 slices - Good & Gather",Cheese,8 oz,1.69,target_live
+"Colby Jack Deli Sliced Cheese, 8oz/12 slices - Good & Gather",Cheese,8 oz,1.69,target_live
+"Provolone Deli Sliced Cheese, 8oz/12 slices - Good & Gather",Cheese,8 oz,1.69,target_live
+"Pepper Jack Deli Sliced Cheese, 8oz/12 slices - Good & Gather",Cheese,8 oz,1.69,target_live
+"Swiss Deli Sliced Cheese, 7oz/10 slices - Good & Gather",Cheese,7 oz,1.69,target_live
+"Mozzarella String Cheese, 12oz/12ct - Good & Gather",Cheese,12 oz,3.29,target_live
+"Mozzarella String Cheese, 24oz/24ct - Good & Gather",Cheese,24 oz,6.39,target_live
+"Colby Jack Cheese Sticks, 9oz/12ct - Good & Gather",Cheese,9 oz,2.79,target_live
+Boneless Skinless Chicken Breast (value pack),Meat & Seafood,1 lb,2.29,target_live
+Boneless Skinless Chicken Breast (small pack),Meat & Seafood,1 lb,3.99,target_live
+Boneless Skinless Chicken Breast (2.25-3.25lb),Meat & Seafood,1 lb,3.99,target_live
+Thin Sliced Chicken Breast (value pack),Meat & Seafood,1 lb,4.49,target_live
+Air Chilled Boneless Skinless Chicken Breast (NAE),Meat & Seafood,1 lb,5.99,target_live
+"Air Chilled Boneless Chicken Breast, 1.25-2.8lb (NAE)",Meat & Seafood,1 lb,5.79,target_live
+Organic Air Chilled Boneless Chicken Breast,Meat & Seafood,1 lb,6.99,target_live
+Organic Air Chilled Chicken Breast Tenders,Meat & Seafood,1 lb,7.29,target_live
+Organic Thin Sliced Chicken Breasts,Meat & Seafood,1 lb,7.29,target_live
+"Parmesan Chicken Breast Cutlets, 20oz - Good & Gather",Meat & Seafood,20 oz,10.99,target_live
+"Ground Beef 73/27, 1lb - Good & Gather",Meat & Seafood,1 lb,6.79,target_live
+"93% Lean Ground Beef, 3lb - Good & Gather",Meat & Seafood,3 lb,21.99,target_live
+"Organic Grassfed 85/15 Ground Beef, 1lb - Good & Gather",Meat & Seafood,1 lb,7.69,target_live
+"Organic Grassfed 90/10 Ground Beef, 1lb - Good & Gather",Meat & Seafood,1 lb,8.19,target_live
+"Organic Grassfed Ground Beef Twin Pack, 2lb - Good & Gather",Meat & Seafood,2 lb,13.99,target_live
+"93/7 Ground Beef Burger Patties, 1lb - Good & Gather",Meat & Seafood,1 lb,7.99,target_live
+"85/15 Ground Round Burger Patties, 4pk/1lb - Good & Gather",Meat & Seafood,1 lb,7.69,target_live
+"Grass Fed Beef Burger Patties 80/20, 10ct/32oz - Good & Gather",Meat & Seafood,32 oz,12.0,target_live
+"Steakhouse Seasoned Tavern Beef Patties, 1.33lb - Good & Gather",Meat & Seafood,1.33 lb,8.99,target_live
+"USDA Choice Angus Beef Steak Strips, 14oz - Good & Gather",Meat & Seafood,14 oz,12.99,target_live
+USDA Choice Angus Boneless Chuck Roast - Good & Gather,Meat & Seafood,1 lb,9.99,target_live
+USDA Choice Top Sirloin Steak - Good & Gather,Meat & Seafood,1 lb,14.99,target_live
+USDA Choice Angus Chuck Tender Steak - Good & Gather,Meat & Seafood,1 lb,11.99,target_live
+USDA Choice Angus Beef Skirt Steak - Good & Gather,Meat & Seafood,1 lb,12.99,target_live
+USDA Choice Angus Steak for Sandwiches - Good & Gather,Meat & Seafood,1 lb,9.99,target_live
+Peppercorn Crusted Beef Sirloin Petite Steak - Good & Gather,Meat & Seafood,1 lb,13.99,target_live
+"Teriyaki Beef Sirloin Strips, 16oz - Good & Gather",Meat & Seafood,16 oz,12.99,target_live
+"Bourbon Black Pepper Beef Sirloin Steak Tips, 13oz - Good & Gather",Meat & Seafood,13 oz,13.99,target_live
+"Premium White Chunk Chicken in Water, 10oz - Good & Gather",Meat & Seafood,10 oz,2.49,target_live
+"Deli Turkey Breast, 16oz - Good & Gather",Meat & Seafood,16 oz,7.59,target_live_article
+"White Sandwich Bread, 20oz - Market Pantry",Bakery & Bread,20 oz loaf,1.59,target_live
+"Honey Wheat Sandwich Bread, 20oz - Market Pantry",Bakery & Bread,20 oz loaf,1.99,target_live
+"Hamburger Buns, 8ct - Market Pantry",Bakery & Bread,8 ct,1.59,target_live
+"Hot Dog Buns, 8ct - Market Pantry",Bakery & Bread,8 ct,1.59,target_live
+"Sliced Sourdough Bread, 17oz - Favorite Day",Bakery & Bread,17 oz loaf,4.19,target_live
+"Take and Bake Baguettes, 2ct - Favorite Day",Bakery & Bread,14 oz/2ct,2.99,target_live
+"Garlic Texas Toast, 11.25oz - Market Pantry",Bakery & Bread,11.25 oz,1.99,target_live
+"Chocolate Chip Muffin Bars, 8ct - Good & Gather",Bakery & Bread,10.4 oz/8ct,3.99,target_live
+"Mini Cucumbers, 16oz bag - Good & Gather",Produce,16 oz,2.29,target_live
+"Rainbow Bell Peppers, 3ct - Good & Gather",Produce,3 ct,2.99,target_live
+"Mini Sweet Peppers, 16oz - Good & Gather",Produce,16 oz,3.49,target_live
+Broccoli Florets - Good & Gather,Produce,varies,2.59,target_live
+"Cauliflower Florets, 12oz - Good & Gather",Produce,12 oz,2.69,target_live
+"Russet Potatoes, 5lb bag",Produce,5 lb,2.99,target_live
+"Sweet Potatoes, 3lb bag - Good & Gather",Produce,3 lb,4.19,target_live
+"Baby Dutch Yellow Potatoes, 24oz - Good & Gather",Produce,24 oz,4.79,target_live
+"Baby Gold Potatoes, 1.5lb - Good & Gather",Produce,1.5 lb,4.79,target_live
+"Baby-Cut Carrots, 1lb bag - Good & Gather",Produce,1 lb,1.39,target_live
+"Organic Carrots, 1lb - Good & Gather",Produce,1 lb,1.39,target_live
+"Organic Baby-Cut Carrots, 1lb - Good & Gather",Produce,1 lb,1.89,target_live
+"Carrot Sticks, 12oz - Good & Gather",Produce,12 oz,1.99,target_live
+"Grape Tomatoes, 10oz - Good & Gather",Produce,10 oz,2.59,target_live
+"Cherry Tomatoes, 10oz - Good & Gather",Produce,10 oz,2.59,target_live
+"Beefsteak Tomatoes, 2ct - Good & Gather",Produce,2 ct,2.99,target_live
+"Steam-in-Bag Spinach, 9oz - Good & Gather",Produce,9 oz,1.99,target_live
+Organic Baby Spinach - Good & Gather,Produce,varies,2.99,target_live
+"Shredded Iceberg Lettuce, 8oz - Good & Gather",Produce,8 oz,1.99,target_live
+"Shredded Green Leaf Lettuce, 4.5oz - Good & Gather",Produce,4.5 oz,2.59,target_live
+"Romaine Hearts, 3ct - Good & Gather",Produce,3 ct,3.99,target_live
+"Yellow Onions, 3lb bag - Good & Gather",Produce,3 lb,3.89,target_live
+"Celery Sticks, 20oz - Good & Gather",Produce,20 oz,3.79,target_live
+Green Beans - Good & Gather,Produce,varies,2.59,target_live
+Organic Bagged Avocados (sale) - Good & Gather,Produce,bag,3.99,target_live
+"Spaghetti, 16oz - Good & Gather",Pasta,16 oz,1.29,target_live
+"Thin Spaghetti, 16oz - Good & Gather",Pasta,16 oz,1.29,target_live
+"Penne Rigate, 16oz - Good & Gather",Pasta,16 oz,1.29,target_live
+"Rotini, 16oz - Good & Gather",Pasta,16 oz,1.29,target_live
+"Tri-color Rotini, 12oz - Good & Gather",Pasta,12 oz,1.29,target_live
+"Rigatoni, 16oz - Good & Gather",Pasta,16 oz,1.29,target_live
+"Fettuccine, 16oz - Good & Gather",Pasta,16 oz,1.29,target_live
+"Angel Hair, 16oz - Good & Gather",Pasta,16 oz,1.29,target_live
+"Medium Shells, 16oz - Good & Gather",Pasta,16 oz,1.29,target_live
+"Elbow Macaroni, 16oz - Good & Gather",Pasta,16 oz,1.29,target_live
+"Farfalle (Bowtie), 16oz - Good & Gather",Pasta,16 oz,1.59,target_live
+"Wide Egg Noodles, 12oz - Good & Gather",Pasta,12 oz,1.39,target_live
+"Orzo, 16oz - Good & Gather Signature",Pasta,16 oz,2.39,target_live
+"Stelline, 16oz - Good & Gather Signature",Pasta,16 oz,2.39,target_live
+"Dinosaur Shaped Organic Kids Pasta, 12oz - Good & Gather",Pasta,12 oz,2.49,target_live
+"Barilla Spaghetti, 16oz",Pasta,16 oz,1.89,target_live
+"Barilla Penne, 16oz",Pasta,16 oz,1.89,target_live
+"Barilla Rotini, 16oz",Pasta,16 oz,1.89,target_live
+"Barilla Elbow Macaroni, 16oz",Pasta,16 oz,1.89,target_live
+"Barilla Protein+ Penne, 14.5oz",Pasta,14.5 oz,2.99,target_live
+"Barilla Protein+ Spaghetti, 14.5oz",Pasta,14.5 oz,2.99,target_live
+"Brami Italian Protein Curly Macaroni, 12oz",Pasta,12 oz,3.49,target_live
+"Goodles Cheddy Mac Cups, 4ct",Pasta,8.8 oz/4ct,7.79,target_live
+"Goodles Shella Good White Cheddar Shells Cups, 4ct",Pasta,8.4 oz/4ct,7.79,target_live
+"Maruchan Chicken Ramen Noodle Soup, 3oz",Ramen & Noodles,3 oz,0.59,target_live
+Maruchan Souper 6-Pack Ramen Noodle Soup,Ramen & Noodles,6 pk,2.29,target_live
+Maruchan Instant Lunch Cup Noodle Soup,Ramen & Noodles,cup,0.69,target_live
+"Nissin Top Ramen Chicken Noodle Soup Bowl, 3.42oz",Ramen & Noodles,3.42 oz,1.29,target_live
+"Nissin Hot & Spicy Chicken Bowl Noodles, 3.32oz",Ramen & Noodles,3.32 oz,1.69,target_live
+"Nongshim Spicy Shin Noodle Soup, 4.23oz",Ramen & Noodles,4.23 oz,1.39,target_live
+"Nongshim Spicy Shin Ramyun Soup, 4ct",Ramen & Noodles,16.9 oz/4ct,5.29,target_live
+"Sapporo Ichiban Original Ramen Noodle Soup, 5ct",Ramen & Noodles,17.5 oz/5ct,4.99,target_live
+"Samyang Buldak Spicy Chicken Stir Fried Ramen, 5ct",Ramen & Noodles,24.7 oz/5ct,7.99,target_live
+"Samyang Buldak Carbonara Ramen, 5ct",Ramen & Noodles,22.9 oz/5ct,7.99,target_live
+"Samyang Buldak Rose Spicy Ramen, 5ct",Ramen & Noodles,24.65 oz/5ct,7.99,target_live
+"Samyang Buldak SWICY Sweet & Spicy Ramen, 5ct",Ramen & Noodles,22.9 oz/5ct,7.99,target_live
+"Samyang Buldak Birria Spicy Ramen, 5ct",Ramen & Noodles,22.9 oz/5ct,7.99,target_live
+"Samyang Buldak Carbonara Ramen Big Bowl, 3.7oz",Ramen & Noodles,3.7 oz,3.19,target_live
+"Samyang Buldak Creamy Carbonara Big Bowl, 4.23oz",Ramen & Noodles,4.23 oz,3.19,target_live
+"Samyang Buldak Carbonara Flat Glass Noodles, 5.78oz",Ramen & Noodles,5.78 oz,4.29,target_live
+"Samyang Buldak Rose Flat Glass Noodles, 5.97oz",Ramen & Noodles,5.97 oz,4.29,target_live
+"Samyang Black Pepper & Beef Korean Ramyeon, 1.15lb",Ramen & Noodles,1.15 lb,6.49,target_live
+"Indomie Fried Mie Goreng Multipack, 15oz",Ramen & Noodles,15 oz,4.59,target_live
+"Lotus Foods Organic Red Miso Millet & Brown Rice Ramen, 2.8oz",Ramen & Noodles,2.8 oz,2.69,target_live
+"MOMOFUKU Soy and Scallion Noodles, 4ct",Ramen & Noodles,14.2 oz/4ct,9.99,target_live
+"MOMOFUKU Sweet and Spicy Noodles, 4ct",Ramen & Noodles,14.12 oz/4ct,9.99,target_live
+"MOMOFUKU Sesame Miso Noodles, 4ct",Ramen & Noodles,14.5 oz/4ct,9.99,target_live
+"A-Sha Scallion Soy Noodles, 6pk",Ramen & Noodles,6 pk,8.99,target_live
+"Enriched Long Grain White Rice, 32oz - Good & Gather",Rice & Grains,32 oz,1.99,target_live_article
+Enriched Long Grain White Rice (size varies) - Good & Gather,Rice & Grains,varies,0.89,target_live
+"Jasmine Rice, 32oz - Good & Gather",Rice & Grains,32 oz,3.79,target_live
+"Jasmine Rice, 5lb - Good & Gather",Rice & Grains,5 lb,7.69,target_live
+"Basmati Rice, 32oz - Good & Gather",Rice & Grains,32 oz,3.79,target_live
+"Organic Basmati Rice, 30oz - Good & Gather",Rice & Grains,30 oz,4.99,target_live
+"Organic Jasmine Rice, 30oz - Good & Gather",Rice & Grains,30 oz,4.39,target_live
+"Long Grain Brown Rice, 32oz - Good & Gather",Rice & Grains,32 oz,1.89,target_live
+Instant Enriched Long Grain White Rice - Good & Gather,Rice & Grains,varies,1.59,target_live
+"90 Second Long Grain White Rice Pouch, 8.8oz - Good & Gather",Rice & Grains,8.8 oz,1.39,target_live
+"90 Second Jasmine Rice Pouch, 8.5oz - Good & Gather",Rice & Grains,8.5 oz,1.39,target_live
+"90 Second Whole Grain Brown Rice Pouch, 8.8oz - Good & Gather",Rice & Grains,8.8 oz,1.39,target_live
+"90 Second Basmati Rice Pouch, 8.5oz - Good & Gather",Rice & Grains,8.5 oz,1.79,target_live
+"90 Second Cilantro Lime Rice, 8.8oz - Good & Gather",Rice & Grains,8.8 oz,1.79,target_live
+"90 Second Organic Jasmine Rice Pouch, 8.8oz - Good & Gather",Rice & Grains,8.8 oz,2.49,target_live
+"90 Second Organic Basmati Rice Pouch, 8.8oz - Good & Gather",Rice & Grains,8.8 oz,2.49,target_live
+"90 Second Whole Grain Blend (Brown Rice, Lentils, Quinoa), 8.8oz",Rice & Grains,8.8 oz,2.49,target_live
+"Dry Lentils, 1lb - Good & Gather",Rice & Grains,1 lb,1.99,target_live
+"Dry Black Beans, 1lb - Good & Gather",Rice & Grains,1 lb,1.99,target_live
+"Dry Pinto Beans, 1lb - Good & Gather",Rice & Grains,1 lb,1.99,target_live
+"Dry Chickpeas (Garbanzo Beans), 1lb - Good & Gather",Rice & Grains,1 lb,1.99,target_live
+"Organic Rainbow Quinoa, 12oz - Good & Gather",Rice & Grains,12 oz,2.79,target_live
+"Organic Quinoa, 30oz - Good & Gather",Rice & Grains,30 oz,6.19,target_live
+"Unbleached All Purpose Flour, 5lb - Good & Gather",Baking,5 lb,2.69,target_live
+"All Purpose Flour, 5lb - Market Pantry",Baking,5 lb,2.59,target_live
+"Whole Wheat Flour, 5lb - Good & Gather",Baking,5 lb,2.69,target_live
+"Organic Flour, 5lb - Good & Gather",Baking,5 lb,6.29,target_live
+"Almond Flour, 16oz - Good & Gather",Baking,16 oz,7.69,target_live
+"Gluten Free Flour Blend, 16oz - Good & Gather",Baking,16 oz,2.89,target_live
+"Yellow Corn Meal, 16oz - Good & Gather",Baking,16 oz,2.19,target_live
+"Gold Medal All Purpose Flour, 2lb",Baking,2 lb,3.39,target_live
+"King Arthur Unbleached All-Purpose Flour, 5lb",Baking,5 lb,6.29,target_live
+"Semi-Sweet Chocolate Morsels, 12oz - Good & Gather",Baking,12 oz,3.99,target_live
+"Pure Vanilla Extract, 2oz - Good & Gather",Baking,2 oz,5.89,target_live
+"Golden Sweet Whole Kernel Corn, 15.25oz - Good & Gather",Canned Goods,15.25 oz,0.89,target_live
+"Cut Green Beans, 14.5oz - Good & Gather",Canned Goods,14.5 oz,0.89,target_live
+"Low Sodium Black Beans, 15.5oz - Good & Gather",Canned Goods,15.5 oz,0.99,target_live
+Black Beans (size varies) - Good & Gather,Canned Goods,varies,0.99,target_live
+"Organic Low Sodium Black Beans, 15oz - Good & Gather",Canned Goods,15 oz,0.99,target_live
+Chickpeas Garbanzo Beans - Good & Gather,Canned Goods,varies,0.99,target_live
+"Organic Low Sodium Chickpeas, 15oz - Good & Gather",Canned Goods,15 oz,0.99,target_live
+"Organic Low Sodium Cannellini Beans, 15oz - Good & Gather",Canned Goods,15 oz,0.99,target_live
+"Organic Low Sodium Pinto Beans, 15oz - Good & Gather",Canned Goods,15 oz,0.99,target_live
+"Organic Low Sodium Dark Red Kidney Beans, 15oz - Good & Gather",Canned Goods,15 oz,1.19,target_live
+"Organic Low Sodium 3 Bean Blend, 15oz - Good & Gather",Canned Goods,15 oz,0.99,target_live
+"Organic Chili Beans, 15oz - Good & Gather",Canned Goods,15 oz,0.99,target_live
+"Classic Refried Pinto Beans, 16oz - Good & Gather",Canned Goods,16 oz,0.99,target_live
+Diced Tomatoes - Good & Gather,Canned Goods,varies,0.99,target_live
+Petite Diced Tomatoes - Good & Gather,Canned Goods,varies,0.99,target_live
+"Diced Tomatoes with Green Chiles, 10oz - Good & Gather",Canned Goods,10 oz,0.99,target_live
+"Crushed Tomatoes, 28oz - Good & Gather",Canned Goods,28 oz,1.89,target_live
+Tomato Sauce - Good & Gather,Canned Goods,varies,0.59,target_live
+"Double Concentrated Tomato Paste, 4.56oz - Good & Gather",Canned Goods,4.56 oz,1.99,target_live
+"100% Pure Pumpkin, 15oz - Good & Gather",Canned Goods,15 oz,1.99,target_live
+"100% Pure Pumpkin, 29oz - Good & Gather",Canned Goods,29 oz,3.79,target_live
+"Reduced Sodium Chicken Broth, 32oz - Good & Gather",Pantry,32 oz,1.39,target_live
+"Tomato Basil Garlic Pasta Sauce, 24oz - Good & Gather",Pantry,24 oz,1.99,target_live
+"Creamy Peanut Butter, 16oz - Good & Gather",Pantry,16 oz,2.39,target_live_article
+"No-Stir Almond Butter, 16oz - Good & Gather",Pantry,16 oz,8.49,target_live_article
+"Extra Virgin Olive Oil, 16.9 fl oz - Good & Gather",Pantry,16.9 fl oz,6.99,target_live_article
+"Extra Virgin Olive Oil, 25.5 fl oz - Good & Gather",Pantry,25.5 fl oz,11.49,target_live_article
+Organic Extra Virgin Olive Oil - Good & Gather,Pantry,bottle,8.69,target_live_article
+"Granola, 12oz - Good & Gather",Pantry,12 oz,4.29,target_live
+"Hummus, 10oz - Good & Gather",Pantry,10 oz,2.99,target_live
+"Green Tomatillo Salsa, 16oz - Good & Gather",Pantry,16 oz,2.99,target_live_article
+"Chocolate Hazelnut Spread, 13oz - Good & Gather",Pantry,13 oz,3.59,target_live_article
+"Reduced Sugar Strawberry Fruit Spread, 15.5oz - Good & Gather",Pantry,15.5 oz,3.39,target_live
+"Organic Strawberry Fruit Spread, 15.5oz - Good & Gather",Pantry,15.5 oz,3.99,target_live
+"Organic Raspberry Fruit Spread, 15.5oz - Good & Gather",Pantry,15.5 oz,3.99,target_live
+"Table Salt, 26oz - Good & Gather",Pantry,26 oz,0.99,target_live_article
+"Caramelized Onion Jam, 7.6oz - Good & Gather",Pantry,7.6 oz,4.49,target_live
+Tomato Ketchup - Market Pantry,Condiments,varies,1.79,target_live
+"Tomato Ketchup 50% Reduced Sugar, 19.5oz - Market Pantry",Condiments,19.5 oz,2.29,target_live
+Organic Ketchup - Good & Gather,Condiments,varies,2.29,target_live
+"Simple Blend Ketchup, 32oz - Good & Gather",Condiments,32 oz,2.59,target_live
+Yellow Mustard - Market Pantry,Condiments,varies,0.69,target_live
+"Dijon Mustard, 12oz - Market Pantry",Condiments,12 oz,1.99,target_live
+"Spicy Brown Mustard, 12oz - Market Pantry",Condiments,12 oz,1.99,target_live
+"Stone Ground Mustard, 12oz - Market Pantry",Condiments,12 oz,1.99,target_live
+"Honey Mustard, 13oz - Market Pantry",Condiments,13 oz,1.99,target_live
+"Organic Dijon Mustard, 9oz - Good & Gather",Condiments,9 oz,1.79,target_live_article
+"Mayonnaise, 30oz - Market Pantry",Condiments,30 oz,3.29,target_live
+"Light Mayonnaise, 30 fl oz - Market Pantry",Condiments,30 fl oz,3.29,target_live
+"Squeeze Mayonnaise, 20 fl oz - Market Pantry",Condiments,20 fl oz,4.19,target_live
+"Reduced Fat Mayonnaise with Olive Oil, 30 fl oz - Market Pantry",Condiments,30 fl oz,3.29,target_live
+"Organic Mayo, 15 fl oz - Good & Gather",Condiments,15 fl oz,4.49,target_live
+"Hellmann's Real Mayonnaise, 15oz",Condiments,15 oz,4.29,target_live_article
+"Worcestershire Sauce, 10 fl oz - Market Pantry",Condiments,10 fl oz,2.99,target_live
+"Dipping Sauce, 8.28 fl oz - Good & Gather",Condiments,8.28 fl oz,2.49,target_live
+"Garlic Powder, 3.12oz - Good & Gather",Seasonings & Spices,3.12 oz,1.19,target_live
+"Onion Powder, 2.62oz - Good & Gather",Seasonings & Spices,2.62 oz,1.19,target_live
+"Crushed Red Pepper, 1.5oz - Good & Gather",Seasonings & Spices,1.5 oz,1.19,target_live
+"Ground Cumin, 2oz - Good & Gather",Seasonings & Spices,2 oz,1.19,target_live
+"Oregano Leaves, 0.75oz - Good & Gather",Seasonings & Spices,0.75 oz,1.19,target_live
+"Chili Powder, 2.5oz - Good & Gather",Seasonings & Spices,2.5 oz,1.19,target_live
+"Smoked Paprika, 2.12oz - Good & Gather",Seasonings & Spices,2.12 oz,2.29,target_live
+"Rosemary, 0.75oz - Good & Gather",Seasonings & Spices,0.75 oz,2.29,target_live
+"Everything Seasoning Blend, 2.5oz - Good & Gather",Seasonings & Spices,2.5 oz,2.59,target_live
+"Organic Ground Garlic Powder, 2.1oz - Good & Gather",Seasonings & Spices,2.1 oz,1.99,target_live
+"Organic Oregano, 0.5oz - Good & Gather",Seasonings & Spices,0.5 oz,1.99,target_live
+"Salt Free Garlic & Herb Seasoning Blend, 2.5oz - Good & Gather",Seasonings & Spices,2.5 oz,1.99,target_live
+"Mini Pretzel Twists, 16oz - Good & Gather",Snacks,16 oz,2.59,target_live_article
+Frito-Lay Snack Variety Pack (sale),Snacks,variety pack,8.99,target_live
+"Ground Black Pepper, 3oz - Good & Gather",Seasonings & Spices,3 oz,3.59,target_live
+"Black Peppercorn Grinder, 1.58oz - Good & Gather",Seasonings & Spices,1.58 oz,2.39,target_live
+"Whole Black Peppercorn, 2.37oz - Good & Gather",Seasonings & Spices,2.37 oz,2.49,target_live
+"Salt & Pepper Shakers, 5oz - Good & Gather",Seasonings & Spices,5 oz,1.99,target_live
+"Iodized Salt, 26oz - Good & Gather",Seasonings & Spices,26 oz,0.99,target_live
+"Sea Salt with Grinder, 3.5oz - Good & Gather",Seasonings & Spices,3.5 oz,3.99,target_live
+"Ground Italian Seasoning, 0.75oz - Good & Gather",Seasonings & Spices,0.75 oz,1.19,target_live
+"Ground Cinnamon, 2.37oz - Good & Gather",Seasonings & Spices,2.37 oz,1.19,target_live
+"Cinnamon Sticks, 0.75oz - Good & Gather",Seasonings & Spices,0.75 oz,3.69,target_live
+"Ground Paprika, 2.12oz - Good & Gather",Seasonings & Spices,2.12 oz,1.19,target_live
+"Ground Nutmeg, 2.12oz - Good & Gather",Seasonings & Spices,2.12 oz,3.99,target_live
+"Parsley Flakes, 0.25oz - Good & Gather",Seasonings & Spices,0.25 oz,1.19,target_live
+"Organic Basil, 0.5oz - Good & Gather",Seasonings & Spices,0.5 oz,1.99,target_live
+"Sesame Seeds, 2.25oz - Good & Gather",Seasonings & Spices,2.25 oz,2.49,target_live
+"Pumpkin Pie Spice, 1.7oz - Good & Gather",Seasonings & Spices,1.7 oz,2.29,target_live
+"Garlic Powder, 10.3oz - Good & Gather",Seasonings & Spices,10.3 oz,4.39,target_live
+Vegetable Oil - Good & Gather,Oils & Vinegar,varies,2.39,target_live
+Canola Oil - Good & Gather,Oils & Vinegar,varies,2.19,target_live
+Extra Virgin Olive Oil - Good & Gather,Oils & Vinegar,varies,6.39,target_live
+Extra Light Tasting Olive Oil - Good & Gather,Oils & Vinegar,varies,6.19,target_live
+Pure Olive Oil - Good & Gather,Oils & Vinegar,varies,8.69,target_live
+"Organic Extra Virgin Olive Oil, 16.9 fl oz - Good & Gather",Oils & Vinegar,16.9 fl oz,7.79,target_live
+"100% Italian Extra Virgin Olive Oil, 16.9 fl oz - Good & Gather",Oils & Vinegar,16.9 fl oz,7.79,target_live
+"Organic Virgin Sesame Oil, 8.45 fl oz - Good & Gather",Oils & Vinegar,8.45 fl oz,4.99,target_live
+"Refined Avocado Oil, 16.9 fl oz - Good & Gather",Oils & Vinegar,16.9 fl oz,10.99,target_live
+Organic Refined Coconut Oil - Good & Gather,Oils & Vinegar,varies,3.99,target_live
+"Organic Virgin Coconut Oil, 14oz - Good & Gather",Oils & Vinegar,14 oz,7.49,target_live
+"Peanut Oil, 128 fl oz - Good & Gather",Oils & Vinegar,128 fl oz,18.19,target_live
+"Garlic Infused Olive Oil, 8.45 fl oz - Good & Gather",Oils & Vinegar,8.45 fl oz,7.99,target_live
+"Chili Infused Olive Oil, 8.45 fl oz - Good & Gather",Oils & Vinegar,8.45 fl oz,7.99,target_live
+"Ghee Clarified Butter, 12oz - Good & Gather",Oils & Vinegar,12 oz,7.99,target_live
+Nonstick Canola Cooking Spray - Good & Gather,Oils & Vinegar,varies,2.19,target_live
+"Nonstick Olive Oil Cooking Spray, 5oz - Good & Gather",Oils & Vinegar,5 oz,3.59,target_live
+"Nonstick Vegetable Oil Cooking Spray, 8oz - Good & Gather",Oils & Vinegar,8 oz,2.69,target_live
+"Nonstick Butter Flavored Cooking Spray, 6oz - Good & Gather",Oils & Vinegar,6 oz,2.19,target_live
+"Avocado Oil Cooking Spray, 5oz - Good & Gather",Oils & Vinegar,5 oz,3.89,target_live
+"Nonstick Coconut Oil Cooking Spray, 5oz - Good & Gather",Oils & Vinegar,5 oz,3.99,target_live
+"Organic EVOO Cooking Spray, 6oz - Good & Gather",Oils & Vinegar,6 oz,5.99,target_live
+"Granulated Sugar, 4lb - Good & Gather",Baking,4 lb,3.49,target_live
+"Light Brown Sugar, 2lb - Good & Gather",Baking,2 lb,1.99,target_live
+"Dark Brown Sugar, 2lb - Good & Gather",Baking,2 lb,1.99,target_live
+"Powdered Sugar, 2lb - Good & Gather",Baking,2 lb,1.99,target_live
+"Baking Soda, 16oz - Good & Gather",Baking,16 oz,0.99,target_live
+"Pure Vanilla Extract, 2 fl oz - Good & Gather",Baking,2 fl oz,5.89,target_live
+"Semi Sweet Chocolate Morsels, 12oz - Good & Gather",Baking,12 oz,3.99,target_live
+"Semi Sweet Mini Chocolate Morsels, 12oz - Good & Gather",Baking,12 oz,3.99,target_live
+"Milk Chocolate Morsels, 11.5oz - Good & Gather",Baking,11.5 oz,3.99,target_live
+"Sweetened Condensed Milk, 14oz - Good & Gather",Baking,14 oz,2.59,target_live
+"Evaporated Milk, 12 fl oz - Good & Gather",Baking,12 fl oz,0.99,target_live
+"100% Pure Maple Syrup, 12 fl oz - Good & Gather",Baking,12 fl oz,8.29,target_live
+"Organic Coconut Milk, 13.5 fl oz - Good & Gather",Baking,13.5 fl oz,2.29,target_live
+"Rainbow Non-Pareils Sprinkles, 3.7oz - Favorite Day",Baking,3.7 oz,2.39,target_live
+"Salted Stick Butter, 1lb/4ct - Good & Gather",Butter,1 lb,3.19,target_live
+"Unsalted Stick Butter, 16oz/4ct - Good & Gather",Butter,16 oz,3.19,target_live
+"Salted Butter Quarters, 2lb - Good & Gather",Butter,2 lb,5.99,target_live
+"Salted Spreadable Butter with Canola Oil, 8oz - Good & Gather",Butter,8 oz,1.69,target_live
+"Signature European Style Salted Butter, 8oz - Good & Gather",Butter,8 oz,3.49,target_live
+"Plant Based Non-Dairy Salted Buttery Sticks, 16oz/4ct - Good & Gather",Butter,16 oz,4.29,target_live
+"Plant Based Non-Dairy Buttery Spread, 13oz - Good & Gather",Butter,13 oz,3.69,target_live
+"No Sugar Uncured Bacon, 12oz - Good & Gather",Meat & Seafood,12 oz,5.99,target_live
+"Uncured No Sugar Thick Cut Bacon, 12oz - Good & Gather",Meat & Seafood,12 oz,5.99,target_live
+"Uncured Canadian Bacon, 6oz - Good & Gather",Meat & Seafood,6 oz,3.99,target_live
+"Ground Pork, 1lb - Good & Gather",Meat & Seafood,1 lb,4.39,target_live
+Boneless Center Pork Chop - Good & Gather,Meat & Seafood,1 lb,5.79,target_live
+Boneless Thin Cut Pork Chop - Good & Gather,Meat & Seafood,1 lb,6.19,target_live
+Boneless Thick Cut Pork Chop - Good & Gather,Meat & Seafood,1 lb,5.59,target_live
+Bone-in Thin Cut Center Cut Pork Chops - Good & Gather,Meat & Seafood,1 lb,4.29,target_live
+Boneless Center Cut Pork Loin Chops - Good & Gather,Meat & Seafood,1 lb,5.59,target_live
+"Pork Tenderloin, All Natural - Good & Gather",Meat & Seafood,1 lb,4.99,target_live
+Garlic & Herb Seasoned Pork Tenderloin - Good & Gather,Meat & Seafood,1 lb,4.99,target_live
+Boneless Pork Shoulder Butt Roast - Good & Gather,Meat & Seafood,1 lb,3.99,target_live
+Baby Back Pork Ribs - Good & Gather,Meat & Seafood,1 lb,3.49,target_live
+Country Style Pork Ribs - Good & Gather,Meat & Seafood,1 lb,5.29,target_live
+"Boneless Diced Pork Sirloin, 1lb - Good & Gather",Meat & Seafood,1 lb,4.29,target_live
+Al Pastor Style Pork - Good & Gather,Meat & Seafood,1 lb,6.99,target_live
+"Seasoned Pulled Pork in BBQ Sauce, 16oz - Good & Gather",Meat & Seafood,16 oz,7.99,target_live
+"Uncured Diced Ham, 8oz - Good & Gather",Meat & Seafood,8 oz,3.29,target_live
+"Hickory Smoked Uncured Ham Steak, 8oz - Good & Gather",Meat & Seafood,8 oz,3.29,target_live
+Hickory Smoked Boneless Sliced Quarter Ham - Good & Gather,Meat & Seafood,1 lb,4.99,target_live
+"Large Raw Shrimp, Peeled & Deveined, Frozen, 16oz - Good & Gather",Meat & Seafood,16 oz,8.49,target_live
+"Large Cooked Shrimp, Peeled & Deveined, Frozen, 16oz - Good & Gather",Meat & Seafood,16 oz,8.49,target_live
+"Small Cooked Shrimp, Frozen, 16oz - Good & Gather",Meat & Seafood,16 oz,8.99,target_live
+"Jumbo Raw Shrimp, Frozen, 16oz - Good & Gather",Meat & Seafood,16 oz,9.49,target_live
+"Colossal Raw Shrimp, Frozen, 16oz - Good & Gather",Meat & Seafood,16 oz,10.49,target_live
+"Wild Caught Large Raw Shrimp, Frozen, 16oz - Good & Gather",Meat & Seafood,16 oz,10.49,target_live
+"21/25 Raw Peeled Shrimp, Frozen, 16oz - Good & Gather",Meat & Seafood,16 oz,11.49,target_live
+"Atlantic Salmon, Frozen, 16oz - Good & Gather",Meat & Seafood,16 oz,11.99,target_live
+"Skin-On Atlantic Salmon, 10oz/2pk - Good & Gather",Meat & Seafood,10 oz,9.99,target_live
+"Alaska Sockeye Salmon Fillets, Frozen, 16oz - Good & Gather",Meat & Seafood,16 oz,14.99,target_live
+"Alaska Keta Salmon Skinless Fillets, Frozen, 24oz - Good & Gather",Meat & Seafood,24 oz,15.99,target_live
+"Alaska Keta Salmon Skin On Fillets, Frozen, 24oz - Good & Gather",Meat & Seafood,24 oz,14.99,target_live
+"Alaska Salmon Burger Patties, Frozen, 16oz/4ct - Good & Gather",Meat & Seafood,16 oz,8.99,target_live
+"Norwegian Cold Smoked Salmon, 4oz - Good & Gather",Meat & Seafood,4 oz,5.49,target_live
+"Tilapia Skinless Fillets, Frozen, 24oz - Good & Gather",Meat & Seafood,24 oz,9.99,target_live
+"Alaska Cod Skinless Fillets, Frozen, 16oz - Good & Gather",Meat & Seafood,16 oz,12.99,target_live
+"Imitation Crab Chunk Style, 8oz - Louis Kemp",Meat & Seafood,8 oz,2.49,target_live
+"Gorton's Breaded Fish Sticks, 24.5oz/44ct",Meat & Seafood,24.5 oz,7.99,target_live
+"Aqua Star Wild Pacific Salmon, 20oz",Meat & Seafood,20 oz,8.99,target_live
+"Organic Low Sodium Kidney Beans, 15oz - Good & Gather",Canned Goods,15 oz,1.19,target_live
+"8"" Organic Flour Tortillas, 6ct - Good & Gather",Bakery & Bread,6 ct,3.29,target_live
+"8"" Organic Whole Wheat Flour Tortillas, 6ct - Good & Gather",Bakery & Bread,6 ct,3.29,target_live
+"Mini Naan Dippers, 7oz - Good & Gather",Bakery & Bread,7 oz,4.19,target_live
+"Chicken Broth, 32oz - Good & Gather",Broth & Soup,32 oz,1.39,target_live
+"Chicken Broth, 48oz - Good & Gather",Broth & Soup,48 oz,2.29,target_live
+"Reduced Sodium Chicken Broth, 48oz - Good & Gather",Broth & Soup,48 oz,2.29,target_live
+"Beef Broth, 32oz - Good & Gather",Broth & Soup,32 oz,1.39,target_live
+"Reduced Sodium Beef Broth, 32oz - Good & Gather",Broth & Soup,32 oz,1.39,target_live
+"Beef Broth, 48oz - Good & Gather",Broth & Soup,48 oz,2.29,target_live
+"Vegetable Broth, 32oz - Good & Gather",Broth & Soup,32 oz,1.39,target_live
+"Vegetable Broth, 48oz - Good & Gather",Broth & Soup,48 oz,2.29,target_live
+"Chicken Stock, 32oz - Good & Gather",Broth & Soup,32 oz,1.99,target_live
+"No Salt Added Chicken Stock, 32oz - Good & Gather",Broth & Soup,32 oz,1.99,target_live
+"Beef Stock, 32oz - Good & Gather",Broth & Soup,32 oz,1.99,target_live
+"Creamy Tomato Bisque Soup, 24oz - Good & Gather",Broth & Soup,24 oz,4.29,target_live
+"Hearty Vegetable Soup, 24oz - Good & Gather",Broth & Soup,24 oz,4.29,target_live
+"Butternut Squash Soup, 24oz - Good & Gather",Broth & Soup,24 oz,4.29,target_live
+"Tomato and Black Bean Soup, 24oz - Good & Gather",Broth & Soup,24 oz,4.29,target_live
+"Southwest Hatch Chile Chowder, 24oz - Good & Gather",Broth & Soup,24 oz,4.29,target_live
+"Tomato Basil & Garlic Pasta Sauce, 24oz - Good & Gather",Sauces,24 oz,1.99,target_live
+"Traditional Pasta Sauce, 24oz - Good & Gather",Sauces,24 oz,1.99,target_live
+"Marinara Pasta Sauce, 23oz - Good & Gather",Sauces,23 oz,1.99,target_live
+"Three Cheese Pasta Sauce, 24oz - Good & Gather",Sauces,24 oz,1.99,target_live
+"Roasted Garlic & Herb Pasta Sauce, 24oz - Good & Gather",Sauces,24 oz,1.99,target_live
+"Classic Meat Pasta Sauce, 24oz - Good & Gather",Sauces,24 oz,1.99,target_live
+"Garden Combo Pasta Sauce, 23.75oz - Good & Gather",Sauces,23.75 oz,1.99,target_live
+"Traditional Pasta Sauce No Sugar Added, 23.5oz - Good & Gather",Sauces,23.5 oz,1.99,target_live
+"Organic Marinara Pasta Sauce, 24oz - Good & Gather",Sauces,24 oz,2.59,target_live
+"Organic Tomato Basil Pasta Sauce, 24oz - Good & Gather",Sauces,24 oz,2.59,target_live
+"Organic Roasted Garlic Pasta Sauce, 24oz - Good & Gather",Sauces,24 oz,2.59,target_live
+"Alfredo Sauce, 15oz - Good & Gather",Sauces,15 oz,1.99,target_live
+"Roasted Garlic Alfredo Sauce, 15oz - Good & Gather",Sauces,15 oz,1.99,target_live
+"Traditional Pizza Sauce, 14oz - Good & Gather",Sauces,14 oz,1.39,target_live
+"Organic Pizza Sauce, 14oz - Good & Gather",Sauces,14 oz,2.29,target_live
+"Basil Pesto Sauce, 7oz - Good & Gather",Sauces,7 oz,5.99,target_live
+"Tomato Sauce, 29oz - Good & Gather",Sauces,29 oz,1.59,target_live
+"Sesame Teriyaki Sauce, 12 fl oz - Good & Gather",Sauces,12 fl oz,2.99,target_live
+"Organic Coconut Aminos, 10 fl oz - Good & Gather",Sauces,10 fl oz,6.99,target_live
+"Sweet Thai Chili Sauce, 12 fl oz - Good & Gather",Sauces,12 fl oz,2.99,target_live
+"Tikka Masala Sauce, 12 fl oz - Good & Gather",Sauces,12 fl oz,2.99,target_live
+"Butter Chicken Sauce, 12 fl oz - Good & Gather",Sauces,12 fl oz,2.99,target_live
+"Lime Crema Sauce, 8.1 fl oz - Good & Gather",Sauces,8.1 fl oz,2.99,target_live
+"Creamy Chipotle Sauce, 8.1 fl oz - Good & Gather",Sauces,8.1 fl oz,2.99,target_live
+"Fresh Banana, each - Good & Gather",Produce,each,0.29,target_live
+"Fresh Organic Bananas, 2lb - Good & Gather",Produce,2 lb,1.79,target_live
+"Hass Avocados, 4ct - Good & Gather",Produce,4 ct,2.99,target_live
+"Organic Hass Avocados, 4ct - Good & Gather",Produce,4 ct,3.99,target_live
+"Mini Hass Avocados, 6ct - Good & Gather",Produce,6 ct,3.99,target_live
+"Fresh Lemons, 2lb Bag - Good & Gather",Produce,2 lb,4.49,target_live
+"Fresh Limes, 1lb Bag - Good & Gather",Produce,1 lb,3.19,target_live
+"Fresh Navel Oranges, 4lb Bag - Good & Gather",Produce,4 lb,4.99,target_live
+"Mandarin Oranges, 3lb - Good & Gather",Produce,3 lb,4.99,target_live
+"Mandarin Oranges, 5lb - Good & Gather",Produce,5 lb,6.99,target_live
+"Fresh Honeycrisp Apples, 3lb Bag - Good & Gather",Produce,3 lb,8.99,target_live
+"Fresh Granny Smith Apples, 3lb Bag - Good & Gather",Produce,3 lb,4.99,target_live
+"Fresh Pink Lady Apples, 3lb Bag - Good & Gather",Produce,3 lb,4.19,target_live
+"Organic Gala Apples, 2lb Bag - Good & Gather",Produce,2 lb,5.29,target_live
+"Organic Fuji Apples, 2lb Bag - Good & Gather",Produce,2 lb,3.19,target_live
+"Organic Granny Smith Apples, 2lb Bag - Good & Gather",Produce,2 lb,4.49,target_live
+"Organic Honeycrisp Apples, 2lb Bag - Good & Gather",Produce,2 lb,9.99,target_live
+"Fresh Bartlett Pears, 3lb Bag - Good & Gather",Produce,3 lb,3.99,target_live
+"Fresh Jumbo Blueberries, 9.8oz - Good & Gather",Produce,9.8 oz,5.49,target_live
+"Fresh Jalapenos, 10oz - Good & Gather",Produce,10 oz,1.19,target_live
+"Fresh Green Bell Peppers, 2ct - Good & Gather",Produce,2 ct,1.89,target_live
+"Organic Mini Sweet Peppers, 8oz - Good & Gather",Produce,8 oz,3.69,target_live
+"Fresh Yellow Onion, each",Produce,each,1.49,target_live
+"Fresh Red Onion, each",Produce,each,1.49,target_live
+"Fresh White Onion, each",Produce,each,1.49,target_live
+"Fresh Organic Green Onion Bunch, 4.5oz",Produce,4.5 oz,1.99,target_live
+"Organic Fresh Cilantro, 1ct",Produce,1 ct,1.79,target_live
+"Fresh English Cucumber, each",Produce,each,0.99,target_live
+"Fresh Iceberg Lettuce Head, each",Produce,each,1.99,target_live
+"Fresh Organic Roma Tomatoes, 1lb",Produce,1 lb,2.99,target_live
+"Fresh Russet Potato, each",Produce,each,0.79,target_live
+"Fresh Sweet Potato, each",Produce,each,1.59,target_live
+"White Distilled Vinegar, 16 fl oz - Good & Gather",Oils & Vinegar,16 fl oz,0.99,target_live
+"White Distilled Vinegar, 64oz - Good & Gather",Oils & Vinegar,64 oz,1.99,target_live
+"Distilled White Vinegar, 128 fl oz - Good & Gather",Oils & Vinegar,128 fl oz,4.59,user_screenshot
+"Apple Cider Vinegar, 16oz - Good & Gather",Oils & Vinegar,16 oz,1.29,target_live
+"Apple Cider Vinegar, 64 fl oz - Good & Gather",Oils & Vinegar,64 fl oz,3.59,target_live
+"Balsamic Vinegar of Modena, 16.9 fl oz - Good & Gather",Oils & Vinegar,16.9 fl oz,4.99,target_live
+"Glaze with Balsamic Vinegar of Modena, 8.5 fl oz - Good & Gather",Oils & Vinegar,8.5 fl oz,4.59,target_live
+"Bragg Organic Apple Cider Vinegar, 16 fl oz",Oils & Vinegar,16 fl oz,4.99,target_live
+"Bragg Organic Apple Cider Vinegar, 32 fl oz",Oils & Vinegar,32 fl oz,6.89,target_live
+"Kikkoman Soy Sauce, 15 fl oz",Sauces,15 fl oz,4.39,target_live
+"Kikkoman Less Sodium Soy Sauce, 10 fl oz",Sauces,10 fl oz,4.19,target_live
+"Kikkoman Soy Sauce, 5 fl oz",Sauces,5 fl oz,2.79,target_live
+"Kikkoman Less Sodium Soy Sauce, 5 fl oz",Sauces,5 fl oz,3.79,target_live
+"Kikkoman Less Sodium Soy Sauce Garlic, 20oz",Sauces,20 oz,6.69,target_live
+"Kikkoman Soy Sauce, 2qt",Sauces,2 qt,12.49,target_live
+"Kikkoman Ponzu Citrus Dressing & Sauce, 10oz",Sauces,10 oz,2.89,target_live
+"Kikkoman Sushi Unagi Sauce, 11.8oz",Sauces,11.8 oz,2.99,target_live
+"Greek Plain Nonfat Yogurt, 32oz - Good & Gather",Dairy & Eggs,32 oz,2.99,target_live
+"Greek Plain Whole Milk Yogurt, 32oz - Good & Gather",Dairy & Eggs,32 oz,3.79,target_live
+"Greek Vanilla Nonfat Yogurt, 32oz - Good & Gather",Dairy & Eggs,32 oz,2.99,target_live
+"Vanilla Honey Greek Whole Milk Yogurt, 32oz - Good & Gather",Dairy & Eggs,32 oz,3.79,target_live
+"Kids Yogurt Pouches, 3.5oz/4ct - Good & Gather",Dairy & Eggs,4 ct,3.89,target_live
+"Kids Yogurt Tubes, 1lb/8ct - Good & Gather",Dairy & Eggs,8 ct,1.89,target_live
+"1% Low Fat Milk, 0.5 gal - Good & Gather",Dairy & Eggs,0.5 gal,1.89,target_live
+"Double Acting Baking Powder, 8.1oz - Good & Gather",Baking,8.1 oz,1.99,target_live
+"Kinder's Teriyaki Sauce, 15.5oz",Sauces,15.5 oz,4.29,target_live
+"Kinder's Sticky Honey BBQ Wing Sauce, 15.8oz",Sauces,15.8 oz,5.19,target_live
+"Buffalo Wild Wings Parmesan Garlic Sauce, 12oz",Sauces,12 oz,3.99,target_live
+"Bibigo Original Korean BBQ Marinade & Sauce, 16.9oz",Sauces,16.9 oz,4.79,target_live
+"Kogi Sweet Garlic Teriyaki Sauce & Marinade, 16.6oz",Sauces,16.6 oz,6.29,target_live
+"Kogi Garlic Gochujang Sauce & Marinade, 16.6oz",Sauces,16.6 oz,6.29,target_live
+"Kogi Korean BBQ Sauce & Marinade, 16.1oz",Sauces,16.1 oz,6.29,target_live
+"Kogi Orange Sauce & Marinade, 16.1oz",Sauces,16.1 oz,6.29,target_live
+"Sliced White Mushrooms, 8oz - Good & Gather",Produce,8 oz,1.99,target_live
+Whole White Mushrooms - Good & Gather,Produce,varies,1.89,target_live
+"Sliced Baby Bella Mushrooms, 8oz - Good & Gather",Produce,8 oz,2.39,target_live
+Baby Bella Mushrooms - Good & Gather,Produce,varies,2.29,target_live
+"Baby Bella Mushrooms, 8oz (Giorgio)",Produce,8 oz,4.19,target_live
+"Sliced White Mushrooms, 8oz (Giorgio)",Produce,8 oz,3.39,target_live
+"Organic Baby Bella Mushrooms, 8oz (Giorgio)",Produce,8 oz,3.39,target_live
+"Whole White Mushrooms, 8oz Package",Produce,8 oz,5.39,target_live
+"Shiitake Mushroom, 4oz - Forest to Fork",Produce,4 oz,3.99,target_live
+"Ground Ginger, 2oz - Good & Gather",Seasonings & Spices,2 oz,3.39,target_live
+"Organic Ground Ginger, 1.6oz - Good & Gather",Seasonings & Spices,1.6 oz,5.59,target_live
+"Minced Ginger, 10oz - Spice World",Seasonings & Spices,10 oz,4.89,target_live
+"All Natural Uncured Pepperoni, 7oz - Good & Gather",Deli Meat,7 oz,3.59,target_live
+"Sliced Prosciutto, 3oz - Good & Gather",Deli Meat,3 oz,5.49,target_live
+"Uncured Honey Ham Ultra-Thin Deli Slices, 9oz - Good & Gather",Deli Meat,9 oz,3.59,target_live
+"Uncured Black Forest Ham Ultra-Thin Deli Slices, 9oz - Good & Gather",Deli Meat,9 oz,3.59,target_live
+"Roast Beef Ultra-Thin Deli Slices, 7oz - Good & Gather",Deli Meat,7 oz,3.59,target_live
+"Lower Sodium Oven Roasted Turkey Breast Deli Slices, 16oz - Good & Gather",Deli Meat,16 oz,6.29,target_live
+"Genoa Salami/Pepper Jack Snack Tray, 3oz - Good & Gather",Deli Meat,3 oz,2.79,target_live
+"Hillshire Farm Ultra Thin Oven Roasted Turkey Breast, 9oz",Deli Meat,9 oz,4.19,target_live
+"Oscar Mayer Deli Fresh Rotisserie Chicken Breast, 9oz",Deli Meat,9 oz,3.99,target_live
+"Oscar Mayer Deli Fresh Mesquite Turkey Breast, 8oz",Deli Meat,8 oz,3.99,target_live
+"Applegate Uncured Genoa Salami, 4oz",Deli Meat,4 oz,5.99,target_live
+"Applegate Natural Sliced Oven Roasted Turkey Breast, 7oz",Deli Meat,7 oz,6.49,target_live
+"Prime Fresh Smoked Ham Lunchmeat, 8oz",Deli Meat,8 oz,3.89,target_live
+"Columbus Pepperoni Panino, 3.9oz",Deli Meat,3.9 oz,6.99,target_live
+"Columbus Genoa Salame Panino, 3.9oz",Deli Meat,3.9 oz,6.99,target_live
+"Hillshire Snacking Genoa Salami & White Cheddar, 2.76oz",Deli Meat,2.76 oz,2.99,target_live
+"Hillshire Snacking Calabrese Pepperjack, 2.76oz",Deli Meat,2.76 oz,2.99,target_live
+"Andouille Chicken Sausage, 12oz - Good & Gather",Meat & Seafood,12 oz,4.99,target_live
+"Jalapeno & Cheddar Chicken Sausage, 12oz - Good & Gather",Meat & Seafood,12 oz,4.99,target_live
+"Apple & Gouda Chicken Sausage, 12oz - Good & Gather",Meat & Seafood,12 oz,4.99,target_live
+"All Turkey Sausage Roll, 16oz - Good & Gather",Meat & Seafood,16 oz,3.99,target_live
+"Jimmy Dean Regular Pork Sausage Roll, 16oz",Meat & Seafood,16 oz,4.99,target_live
+"Jimmy Dean Fully Cooked Pork Sausage Links, 9.6oz/12ct",Meat & Seafood,9.6 oz,5.59,target_live
+"Jimmy Dean Fully Cooked Turkey Sausage Links, 9.6oz/12ct",Meat & Seafood,9.6 oz,5.59,target_live
+"Johnsonville Original Breakfast Sausage Patties, 8ct/12oz",Meat & Seafood,12 oz,4.29,target_live
+"Johnsonville Vermont Maple Breakfast Sausage, 14ct/12oz",Meat & Seafood,12 oz,4.29,target_live
+"Plain Block Cream Cheese Bar, 8oz - Good & Gather",Dairy & Eggs,8 oz,1.69,target_live
+"Plain Block Cream Cheese Bar, 8oz/2ct - Good & Gather",Dairy & Eggs,16 oz,3.19,target_live
+"Plain Cream Cheese Bar, 8oz - Good & Gather",Dairy & Eggs,8 oz,1.69,target_live
+"Neufchatel Cream Cheese Bar, 8oz - Good & Gather",Dairy & Eggs,8 oz,1.69,target_live
+"Plain Cream Cheese Spread, 8oz - Good & Gather",Dairy & Eggs,8 oz,1.99,target_live
+"Whipped Plain Cream Cheese Spread, 8oz - Good & Gather",Dairy & Eggs,8 oz,1.99,target_live
+"Whipped Plain Cream Cheese Spread, 12oz - Good & Gather",Dairy & Eggs,12 oz,2.79,target_live
+"Chive & Onion Cream Cheese Spread, 8oz - Good & Gather",Dairy & Eggs,8 oz,1.99,target_live
+"Strawberry Cream Cheese Spread, 8oz - Good & Gather",Dairy & Eggs,8 oz,1.99,target_live
+"Heavy Whipping Cream, 32 fl oz - Good & Gather",Dairy & Eggs,32 fl oz,4.79,target_live
+"Organic Heavy Whipping Cream, 16 fl oz - Good & Gather",Dairy & Eggs,16 fl oz,4.79,target_live
+"Organic Fresh Cilantro, 0.5oz - Good & Gather",Produce,0.5 oz,1.99,target_live
+"Organic Fresh Basil, 0.5oz - Good & Gather",Produce,0.5 oz,1.99,target_live
+"Organic Fresh Thyme, 0.5oz - Good & Gather",Produce,0.5 oz,1.99,target_live
+"Organic Fresh Rosemary, 0.5oz - Good & Gather",Produce,0.5 oz,1.99,target_live
+"Organic Fresh Oregano, 0.5oz - Good & Gather",Produce,0.5 oz,1.99,target_live
+"Organic Fresh Sage, 0.5oz - Good & Gather",Produce,0.5 oz,1.99,target_live
+"Organic Fresh Mint, 0.5oz - Good & Gather",Produce,0.5 oz,1.99,target_live
+"Organic Fresh Dill, 0.5oz - Good & Gather",Produce,0.5 oz,1.99,target_live
+"Organic Fresh Chives, 0.5oz - Good & Gather",Produce,0.5 oz,1.99,target_live
+"Organic Fresh Italian Parsley, 0.5oz - Good & Gather",Produce,0.5 oz,1.99,target_live
+"Organic Italian Parsley Bunch, 1ct",Produce,1 ct,1.79,target_live
+"Organic Fresh Basil, 0.75oz Package",Produce,0.75 oz,3.99,target_live
+"Organic Fresh Thyme, 0.75oz Package",Produce,0.75 oz,3.99,target_live
+"Organic Fresh Rosemary, 0.75oz Package",Produce,0.75 oz,3.99,target_live
+"Organic Fresh Cilantro, 0.75oz Package",Produce,0.75 oz,3.99,target_live
+"Organic Fresh Dill, 0.75oz Package",Produce,0.75 oz,3.99,target_live
+"Organic Fresh Mint, 0.75oz Package",Produce,0.75 oz,3.99,target_live
+"Organic Italian Parsley, 0.75oz Package",Produce,0.75 oz,2.99,target_live
+"Gourmet Garden Garlic Stir-In Paste, 4oz",Produce,4 oz,4.19,target_live
+"Gourmet Garden Minced Garlic Stir-In Paste, 4oz",Produce,4 oz,4.19,target_live
+"Gourmet Garden Ginger Stir-In Paste, 4oz",Produce,4 oz,4.19,target_live
+"Gourmet Garden Basil Stir-In Paste, 4oz",Produce,4 oz,4.19,target_live
+"Gourmet Garden Cilantro Stir-In Paste, 4oz",Produce,4 oz,4.19,target_live
+"Rosemary, 0.75oz - Good & Gather (dried)",Seasonings & Spices,0.75 oz,2.29,target_live
+"Organic Italian Seasoning, 0.8oz - Good & Gather",Seasonings & Spices,0.8 oz,5.59,target_live
+"Organic Basil, 0.6oz - Good & Gather (dried)",Seasonings & Spices,0.6 oz,5.59,target_live
+"Organic Extra-Firm Tofu, 14oz - Good & Gather",Meat & Seafood,14 oz,2.99,target_live
+"Organic Super Firm Tofu, 14oz - Good & Gather",Meat & Seafood,14 oz,3.99,target_live
+"Fresh Zucchini, 2ct",Produce,2 ct,2.99,target_live
+"Spice World Garlic, each",Produce,each,0.99,target_live
+"Spice World Whole Garlic, 3ct Bag",Produce,3 ct,1.99,target_live
+"Organic Garlic Bulbs, 3ct - Spice World",Produce,3 ct,2.89,target_live
+"Fresh Garlic, 3ct Bag",Produce,3 ct,3.99,target_live
+"Organic Garlic, 3oz Bag",Produce,3 oz,3.39,target_live
+"Spice World Organic Peeled Garlic, 6oz",Produce,6 oz,3.49,target_live
+"Spice World Minced Garlic, 8oz",Produce,8 oz,3.69,target_live
+"Spice World Minced Garlic, 32oz",Produce,32 oz,6.89,target_live
+"Spice World Organic Minced Garlic, 4.5oz",Produce,4.5 oz,3.49,target_live
+"Spice World Premium Minced Squeeze Garlic, 9.5oz",Produce,9.5 oz,5.59,target_live
+"Badia Minced Garlic in Oil, 8oz",Produce,8 oz,2.79,target_live
+"Frozen Crushed Garlic Cubes, 2.8oz - Good & Gather",Produce,2.8 oz,3.29,target_live
+"Plain Bread Crumbs, 15oz - Market Pantry",Pantry,15 oz,1.29,target_live
+"Italian-Style Bread Crumbs, 15oz - Market Pantry",Pantry,15 oz,1.29,target_live
+"Plain Panko Bread Crumbs, 8oz - Market Pantry",Pantry,8 oz,1.99,target_live
+"Italian-Style Panko Bread Crumbs, 8oz - Market Pantry",Pantry,8 oz,1.99,target_live
+"Gluten Free Plain Bread Crumbs, 9oz - Good & Gather",Pantry,9 oz,2.49,target_live
+"Italian Seasoned Gluten Free Bread Crumbs, 9oz - Good & Gather",Pantry,9 oz,2.49,target_live
+"Kikkoman Panko Bread Crumbs, 8oz",Pantry,8 oz,2.59,target_live
+"Kikkoman Gluten Free Panko Bread Crumbs, 8oz",Pantry,8 oz,4.89,target_live
+"Progresso Plain Bread Crumbs, 15oz",Pantry,15 oz,2.39,target_live
+"Progresso Italian Style Bread Crumbs, 15oz",Pantry,15 oz,2.39,target_live
+"Progresso Panko Crispy Bread Crumbs Plain, 8oz",Pantry,8 oz,2.59,target_live
+"Shake 'N Bake Extra Crispy Seasoned Coating Mix, 5oz",Pantry,5 oz,4.19,target_live
+"Zatarains Fish Fry Southern Breading Mix, 12oz",Pantry,12 oz,1.89,target_live
+"Louisiana Fish Fry Classic Fry Breading, 10oz",Pantry,10 oz,1.99,target_live
+"Fresh Green Cabbage, each",Produce,each,2.19,target_live
+"Organic Green Cabbage, each",Produce,each,3.89,target_live
+"Fresh Organic Red Cabbage, each",Produce,each,3.19,target_live
+"Napa Cabbage, 2ct",Produce,2 ct,3.79,target_live
+"Fresh Brussels Sprouts, 12oz - Good & Gather",Produce,12 oz,3.69,target_live
+"Fresh Shaved Brussels Sprouts, 9oz - Good & Gather",Produce,9 oz,3.19,target_live
+"Taylor Farms Brussel Sprouts, 12oz",Produce,12 oz,7.29,target_live
+"Cleveland Kitchen Mayo-Free Coleslaw, 16oz",Produce,16 oz,5.29,target_live
+"Ground Turmeric, 2oz - Good & Gather",Seasonings & Spices,2 oz,2.49,manual_instore
+"93/7 All Natural Ground Turkey Burger Patties, 1lb - Good & Gather",Meat & Seafood,1 lb,4.69,target_live
+"Homestyle Turkey Meatballs, Frozen, 20oz - Good & Gather",Meat & Seafood,20 oz,6.99,target_live
+"All Natural Turkey Burger Patties, Frozen, 32oz/6ct - Good & Gather",Meat & Seafood,32 oz,8.99,target_live
+"Jimmy Dean Fully Cooked Turkey Sausage Patties, 9.6oz/8ct",Meat & Seafood,9.6 oz,5.59,target_live
+"Fresh All Natural 80/20 Ground Beef, 1lb - Good & Gather",Meat & Seafood,1 lb,7.89,target_search_snippet
+"Fresh All Natural 85/15 Ground Beef, 1lb - Good & Gather",Meat & Seafood,1 lb,7.49,target_search_snippet
+"Fresh All Natural 93/7 Ground Beef, 1lb - Good & Gather",Meat & Seafood,1 lb,8.49,target_search_snippet
+"Fresh All Natural 93/7 Ground Beef, 2lb - Good & Gather",Meat & Seafood,2 lb,15.99,target_search_snippet
+"Fresh All Natural 85/15 Ground Beef, 2lb - Good & Gather",Meat & Seafood,2 lb,14.19,target_search_snippet
+"Johnsonville Smoked Beef Bratwurst, 12oz",Meat & Seafood,12 oz,4.79,target_live
+"Aidells Chicken & Apple Smoked Chicken Sausage, 12oz/4ct",Meat & Seafood,12 oz,5.49,target_live
+"Cayenne Pepper, 1.87oz - Good & Gather",Seasonings & Spices,1.87 oz,3.39,manual_instore
+"Frank's RedHot Original Cayenne Pepper Hot Sauce, 12 fl oz",Condiments,12 fl oz,4.29,target_live
+"Frank's RedHot Buffalo Wings Hot Sauce, 12 fl oz",Condiments,12 fl oz,4.29,target_live
+"Cholula Original Hot Sauce, 12 fl oz",Condiments,12 fl oz,7.99,target_live
+"TABASCO Green Pepper Jalapeno Sauce, 5oz",Condiments,5 oz,3.79,target_live
+"TABASCO Habanero Sauce, 5 fl oz",Condiments,5 fl oz,3.79,target_live
+"TABASCO Salsa Picante Hot Sauce, 8.6 fl oz",Condiments,8.6 fl oz,4.19,target_live
+"Yellowbird Blue Agave Sriracha Hot Sauce, 9.8oz",Condiments,9.8 oz,5.99,target_live
+"Kosher Dill Snack Pickles, 16 fl oz - Market Pantry",Pickles & Olives,16 fl oz,2.69,target_live
+"Kosher Dill Sandwich Slices, 16 fl oz - Market Pantry",Pickles & Olives,16 fl oz,2.69,target_live
+"Kosher Dill Pickle Spears, 24 fl oz - Market Pantry",Pickles & Olives,24 fl oz,2.99,target_live
+"Kosher Dill Hamburger Chips, 24 fl oz - Market Pantry",Pickles & Olives,24 fl oz,2.99,target_live
+"Dill Hamburger Chips, 32 fl oz - Market Pantry",Pickles & Olives,32 fl oz,2.99,target_live
+"Dill Baby Pickles, 32 fl oz - Market Pantry",Pickles & Olives,32 fl oz,3.39,target_live
+"Bread and Butter Chips, 24 fl oz - Market Pantry",Pickles & Olives,24 fl oz,2.99,target_live
+"Organic Kosher Baby Dill Pickles, 32 fl oz - Good & Gather",Pickles & Olives,32 fl oz,5.89,target_live
+"Organic Kosher Hamburger Dill Pickle Chips, 32 fl oz - Good & Gather",Pickles & Olives,32 fl oz,5.89,target_live
+"Petite Kosher Dill Pickle Snack Pouch, 4.8 fl oz - Good & Gather",Pickles & Olives,4.8 fl oz,1.59,target_live
+"Sliced Black Ripe Olives, 2.25oz - Market Pantry",Pickles & Olives,2.25 oz,1.99,target_live
+"Sliced Black Ripe Olives, 3.8oz - Market Pantry",Pickles & Olives,3.8 oz,2.59,target_live
+"Pitted Large Black Ripe Olives, 6oz - Market Pantry",Pickles & Olives,6 oz,1.99,target_live
+"Manzanilla Olives with Pimiento, 5.75oz - Market Pantry",Pickles & Olives,5.75 oz,1.79,target_live
+"Queen Olives with Pimiento, 10oz - Market Pantry",Pickles & Olives,10 oz,4.19,target_live
+"Greek Pitted Kalamata Olives, 6.5oz - Good & Gather",Pickles & Olives,6.5 oz,4.59,target_live
+"Snack Pitted Green Olives w/ Basil & Garlic, 1.05oz - Good & Gather",Pickles & Olives,1.05 oz,1.29,target_live
+"Hot Sliced Jalapenos, 12 fl oz - Market Pantry",Pickles & Olives,12 fl oz,2.29,target_live
+"Hot Sliced Jalapeno, 12oz - Market Pantry",Pickles & Olives,12 oz,1.99,target_live
+"Mild Sliced Banana Peppers, 12 fl oz - Market Pantry",Pickles & Olives,12 fl oz,2.29,target_live
+"Hot Sliced Banana Peppers, 12oz - Market Pantry",Pickles & Olives,12 oz,2.29,target_live
+"Whole Pepperoncinis, 12 fl oz - Market Pantry",Pickles & Olives,12 fl oz,2.29,target_live
+"Mild Diced Green Chiles, 4oz - Market Pantry",Canned Goods,4 oz,1.19,target_live
+"Non-Pareil Capers, 3.5oz - Good & Gather",Pickles & Olives,3.5 oz,1.99,target_live
+"Thyme Leaves, 0.75oz - Good & Gather",Seasonings & Spices,0.75 oz,2.49,manual_instore
+"Whole Bay Leaves, 0.12oz - Good & Gather",Seasonings & Spices,0.12 oz,3.39,manual_instore
+"Organic Bay Leaves, 0.1oz - Good & Gather",Seasonings & Spices,0.1 oz,2.99,manual_instore
+"Curry Powder, 2oz - Good & Gather",Seasonings & Spices,2 oz,2.49,manual_instore
+"VAHDAM Authentic Indian Curry Powder Spice Blend, 1.76oz",Seasonings & Spices,1.76 oz,4.19,manual_instore
+"Old Fashioned Oats, 18oz - Good & Gather",Breakfast,18 oz,2.89,target_live
+"Old Fashioned Oats, 42oz - Good & Gather",Breakfast,42 oz,4.39,target_live
+"Quick Oats, 18oz - Good & Gather",Breakfast,18 oz,2.89,target_live
+"Quick Oats, 42oz - Good & Gather",Breakfast,42 oz,4.39,target_live
+"Organic Old Fashioned Oats, 18oz - Good & Gather",Breakfast,18 oz,3.89,target_live
+"Organic Plain Instant Oatmeal Packets, 7.9oz/8ct - Good & Gather",Breakfast,8 ct,2.69,target_live
+"Organic Maple Brown Sugar Instant Oatmeal Packets, 11.28oz/8ct - Good & Gather",Breakfast,8 ct,2.69,target_live
+"Organic Apple Cinnamon Instant Oatmeal Packets, 11.28oz/8ct - Good & Gather",Breakfast,8 ct,2.69,target_live
+"Maple & Brown Sugar Instant Oatmeal, 30.3oz/20ct - Good & Gather",Breakfast,20 ct,3.79,target_live
+"Pumpkin Spice Instant Oatmeal, 12.1oz - Good & Gather",Breakfast,12.1 oz,2.69,target_live
+"Old El Paso Taco Seasoning Mix Original, 1oz",Seasonings & Spices,1 oz,0.99,manual_instore
+"Old El Paso 25% Less Sodium Taco Seasoning, 1oz",Seasonings & Spices,1 oz,0.99,manual_instore
+"Old El Paso Taco Seasoning Mix Original, 6.25oz",Seasonings & Spices,6.25 oz,3.59,manual_instore
+"House Blend Medium Roast Ground Coffee, 12oz - Good & Gather",Beverages,12 oz,8.99,target_live
+"House Blend Medium Roast Ground Coffee Decaf, 12oz - Good & Gather",Beverages,12 oz,8.99,target_live
+"Breakfast Blend Light Roast Ground Coffee, 12oz - Good & Gather",Beverages,12 oz,8.99,target_live
+"Donut Shop Blend Medium Roast Ground Coffee, 12oz - Good & Gather",Beverages,12 oz,8.99,target_live
+"Signature Organic Three Region Blend Medium Roast Ground Coffee, 12oz - Good & Gather",Beverages,12 oz,9.99,target_live
+"Signature Organic Espresso Blend Dark Roast Ground Coffee, 12oz - Good & Gather",Beverages,12 oz,9.99,target_live
+"Signature Organic Sumatra Mandheling Medium Roast Ground Coffee, 12oz - Good & Gather",Beverages,12 oz,9.99,target_live
+"Signature Organic Ethiopian Yirgacheffe Light Roast Ground Coffee, 12oz - Good & Gather",Beverages,12 oz,9.99,target_live
+"Flavored Light Roast Ground Coffee (any variety), 12oz - Good & Gather",Beverages,12 oz,8.99,target_live
+"Old El Paso Taco Seasoning Mix Mild, 1oz",Seasonings & Spices,1 oz,0.99,user_screenshot
+"Old El Paso GF Taco Seasoning Reduced Sodium Value Size, 6.25oz",Seasonings & Spices,6.25 oz,3.59,user_screenshot
+"McCormick Original Taco Seasoning Mix, 1oz",Seasonings & Spices,1 oz,0.99,user_screenshot
+"McCormick 30% Less Sodium Mild Taco Seasoning Mix, 1oz",Seasonings & Spices,1 oz,0.99,user_screenshot
+"Taco Bell Seasoning Mild, 1oz",Seasonings & Spices,1 oz,0.89,user_screenshot
+"Siete Mild Taco Seasoning, 1.31oz",Seasonings & Spices,1.31 oz,2.39,user_screenshot
+"Siete Spicy Taco Seasoning, 1.31oz",Seasonings & Spices,1.31 oz,2.39,user_screenshot
+"Siete Al Pastor Seasoning, 1oz",Seasonings & Spices,1 oz,2.39,user_screenshot
+"Siete Gluten Free Chicken Fajita Seasoning, 1oz",Seasonings & Spices,1 oz,2.39,user_screenshot
+"Siete Gluten Free Beef Fajita Seasoning, 1oz",Seasonings & Spices,1 oz,2.39,user_screenshot
+"Siete Chili Lime Seasoning, 4.3oz",Seasonings & Spices,4.3 oz,5.99,user_screenshot
+"Spanglish Asadero Taco Seasoning, 1oz",Seasonings & Spices,1 oz,2.89,user_screenshot
+"Spanglish Asadero Taco Seasoning Chipotle, 4.5oz",Seasonings & Spices,4.5 oz,6.19,user_screenshot
+"Kinder's The Fajita Blend Seasoning, 1oz",Seasonings & Spices,1 oz,1.79,user_screenshot
+"Arriba! Roasted Tomato Ground Beef Taco Seasoning, 8oz",Seasonings & Spices,8 oz,3.39,user_screenshot
+Arriba! Texas Original Steak and Chicken Fajita Seasoning,Seasonings & Spices,varies,2.79,user_screenshot
+"Tajin Clasico Chile Lime Seasoning, 5oz",Seasonings & Spices,5 oz,3.39,user_screenshot
+"Tajin Reduced Sodium Clasico Chile Lime Seasoning, 5oz",Seasonings & Spices,5 oz,3.39,user_screenshot
+"EZ Bombs Birria Bomb Seasoning, 2.4oz",Seasonings & Spices,2.4 oz,8.79,user_screenshot
+"EZ Bombs Birria Bomb Seasoning Mix, Pack of 2",Seasonings & Spices,2 pk,19.99,user_screenshot
+"Taco Bell Mild Taco Sauce, 7.5oz",Sauces,7.5 oz,1.99,user_screenshot
+"Tyson Bone-In Chicken Thighs, 2.32-2.69lb (per lb)",Meat & Seafood,per lb,2.69,user_screenshot
+Organic Air Chilled Boneless Skinless Chicken Thighs (per lb) - Good & Gather,Meat & Seafood,per lb,5.99,user_screenshot
+No Antibiotics Ever Boneless Skinless Chicken Thighs (per lb) - Good & Gather,Meat & Seafood,per lb,4.99,user_screenshot
+Tyson Trimmed & Ready Chicken Tenderloins (per lb),Meat & Seafood,per lb,5.29,user_screenshot
+Tyson Trimmed & Ready Boneless Skinless Chicken Breasts (per lb),Meat & Seafood,per lb,4.99,user_screenshot
+Fresh All Natural Boneless Skinless Chicken Breast Value Pack (per lb) - Good & Gather,Meat & Seafood,per lb,2.29,user_screenshot
+Fresh All Natural Boneless Skinless Chicken Breast (per lb) - Good & Gather,Meat & Seafood,per lb,3.99,user_screenshot
+"Perdue Air Fryer Roasted Chicken Wings, Frozen, 22oz",Meat & Seafood,22 oz,9.99,user_screenshot
+"Perdue Air Fryer Lemon Pepper Chicken Wings, Frozen, 22oz",Meat & Seafood,22 oz,9.99,user_screenshot
+"Tyson All Natural Chicken Breast Patties, Frozen, 23oz",Meat & Seafood,23 oz,6.99,user_screenshot
+"Just Bare Lightly Breaded Chicken Breast Fillets, 24oz",Meat & Seafood,24 oz,10.99,user_screenshot
+"Perdue Lightly Breaded Chicken Breast Chunks, Frozen, 22oz",Meat & Seafood,22 oz,8.49,user_screenshot
+"Perdue Powered High Protein Chicken Strips, Frozen, 20oz",Meat & Seafood,20 oz,8.49,user_screenshot
+"Shredded Rotisserie Seasoned Chicken, 12oz - Good & Gather",Meat & Seafood,12 oz,6.29,user_screenshot
+"Natural Unsweetened Cocoa Powder, 8oz - Good & Gather",Baking,8 oz,5.39,target_live
+"Hershey's Unsweetened Cocoa, 8oz",Baking,8 oz,6.89,target_live
+"GHIRARDELLI Unsweetened Cocoa Powder, 8oz",Baking,8 oz,9.19,target_live
+"Organic Pure Honey, 16oz - Good & Gather",Pantry,16 oz,6.29,target_live
+"Organic Wildflower Pure Honey, 12oz - Good & Gather",Pantry,12 oz,6.99,target_live
+"Mike's Hot Honey, 12oz",Pantry,12 oz,10.59,target_live
+"Honey Graham Crackers, 14.4oz - Favorite Day",Snacks,14.4 oz,2.19,target_live
+"Honey Maid Graham Crackers, 14.4oz",Snacks,14.4 oz,4.89,target_live
+Pure Clover Honey (12/24/40oz) - Good & Gather,Pantry,range 12-40oz,3.99,target_live_range_low
+Raw & Unfiltered North American Honey - Good & Gather,Pantry,range,4.99,target_live_range_low
+Organic Raw Unfiltered Honey - Good & Gather,Pantry,range,6.99,target_live_range_low
+"Zesty Italian Dressing & Marinade, 16 fl oz - Market Pantry",Salad Dressing,16 fl oz,2.49,target_live
+"Chipotle Ranch Dressing, 16 fl oz - Market Pantry",Salad Dressing,16 fl oz,2.49,target_live
+"Organic Ranch Dressing, 12 fl oz - Good & Gather",Salad Dressing,12 fl oz,3.29,target_live
+"Organic Ranch Dressing, 11.8 fl oz - Good & Gather",Salad Dressing,11.8 fl oz,3.29,target_live
+"Organic Italian Dressing, 12 fl oz - Good & Gather",Salad Dressing,12 fl oz,3.29,target_live
+"Organic Italian Dressing, 11.8 fl oz - Good & Gather",Salad Dressing,11.8 fl oz,3.29,target_live
+"Organic Balsamic Vinaigrette, 11.8 fl oz - Good & Gather",Salad Dressing,11.8 fl oz,3.29,target_live
+"Organic Honey Mustard Dressing, 12 fl oz - Good & Gather",Salad Dressing,12 fl oz,3.29,target_live
+"Organic Honey Mustard Dressing, 11.8 fl oz - Good & Gather",Salad Dressing,11.8 fl oz,3.29,target_live
+"Organic Toasted Sesame Ginger Vinaigrette, 11.8 fl oz - Good & Gather",Salad Dressing,11.8 fl oz,3.29,target_live
+"Organic Apple Cider Vinaigrette, 11.8oz - Good & Gather",Salad Dressing,11.8 oz,3.29,target_live
+"Organic Raspberry Vinaigrette, 11.8oz - Good & Gather",Salad Dressing,11.8 oz,3.29,target_live
+"Organic Poppyseed Dressing, 11.8oz - Good & Gather",Salad Dressing,11.8 oz,3.29,target_live
+"Asian Sesame Vinaigrette, 11.8 fl oz - Good & Gather",Salad Dressing,11.8 fl oz,2.99,target_live
+"Pomegranate Blush Vinaigrette, 11.8 fl oz - Good & Gather",Salad Dressing,11.8 fl oz,2.99,target_live
+"Creamy Aji Verde Dressing, 11.8 fl oz - Good & Gather",Salad Dressing,11.8 fl oz,2.99,target_live
+"Buffalo Ranch Dressing, 11.8 fl oz - Good & Gather",Salad Dressing,11.8 fl oz,2.99,target_live
+"Hot Honey Mustard Dressing, 11.8 fl oz - Good & Gather",Salad Dressing,11.8 fl oz,2.99,target_live
+"Kraft Zesty Italian Salad Dressing, 16 fl oz",Salad Dressing,16 fl oz,3.49,target_live
+"Ken's Steak House Creamy Caesar Salad Dressing, 16 fl oz",Salad Dressing,16 fl oz,3.99,target_live
+"Brianna's Asiago Caesar Dressing, 12 fl oz",Salad Dressing,12 fl oz,3.99,target_live
+"Brianna's Home Style Real French Vinaigrette, 12 fl oz",Salad Dressing,12 fl oz,3.99,target_live
+"Brianna's Creamy Balsamic Dressing, 12 fl oz",Salad Dressing,12 fl oz,3.99,target_live
+"Bolthouse Farms Creamy Caesar Yogurt Dressing & Dip, 12 fl oz",Salad Dressing,12 fl oz,3.99,target_live
+"Primal Kitchen Balsamic Vinaigrette with Avocado Oil, 8 fl oz",Salad Dressing,8 fl oz,5.49,target_live
+"Chosen Foods Lemon Garlic Dressing & Marinade, 8 fl oz",Salad Dressing,8 fl oz,5.29,target_live
+"Chunk Light Tuna in Water, 5oz - Good & Gather",Canned Goods,5 oz,1.19,target_live
+"Chunk Light Tuna in Water, 2.6oz - Good & Gather",Canned Goods,2.6 oz,0.99,target_live
+"Solid White Albacore Tuna in Water, 5oz - Good & Gather",Canned Goods,5 oz,1.99,target_live
+"Albacore Chunk White Tuna in Water, 2.6oz - Good & Gather",Canned Goods,2.6 oz,1.89,target_live
+"Premium Wild Skipjack Chunk Light Tuna in Water, 5oz - Good & Gather",Canned Goods,5 oz,1.99,target_live
+"Premium Wild Albacore Chunk White Tuna in Water, 5oz - Good & Gather",Canned Goods,5 oz,2.49,target_live
+"Premium Wild Albacore Chunk White Tuna in EVOO, 5oz - Good & Gather",Canned Goods,5 oz,2.99,target_live
+"Sriracha Chunk Light Tuna, 2.6oz - Good & Gather",Canned Goods,2.6 oz,0.99,target_live
+"Soy Sauce Chunk Light Tuna, 2.6oz - Good & Gather",Canned Goods,2.6 oz,0.99,target_live
+"Sweet & Spicy Chunk Light Tuna, 2.6oz - Good & Gather",Canned Goods,2.6 oz,0.99,target_live
+"Lemon Pepper Chunk Light Tuna, 2.6oz - Good & Gather",Canned Goods,2.6 oz,0.99,target_live
+"Oven-Ready Lasagna Noodles, 12oz - Good & Gather",Pasta,12 oz,1.69,target_live
+"Barilla Wavy Lasagna Pasta, 16oz",Pasta,16 oz,2.69,target_live
+"Barilla Oven Ready Lasagna Pasta, 9oz",Pasta,9 oz,2.69,target_live
+"Barilla Gluten Free Oven Ready Lasagna Pasta, 10oz",Pasta,10 oz,2.79,target_live
+"Mission Burrito Size Flour Tortillas, 20oz/8ct",Bakery & Bread,8 ct,2.87,target_live
+"Mission Fajita Size Flour Tortillas, 23oz/20ct",Bakery & Bread,20 ct,2.95,target_live
+"Mission Carb Balance Taco Size Flour Tortillas, 12oz/8ct",Bakery & Bread,8 ct,4.39,target_live
+"La Banderita Carb Counter Soft Taco Tortilla Wraps, 11.8oz",Bakery & Bread,11.8 oz,4.24,target_live
+"Barilla Ditalini Pasta, 16oz",Pasta,16 oz,1.89,target_live
+"Extra-Wide Yolk-free Ribbons, 12oz - Good & Gather",Pasta,12 oz,1.39,target_live
+"Signature Radiatore, 16oz - Good & Gather",Pasta,16 oz,2.39,target_live
+"Alphabet Shaped Organic Kids Pasta, 12oz - Good & Gather",Pasta,12 oz,2.49,target_live
+"DeLallo Italian Potato Gnocchi, 16oz",Pasta,16 oz,2.99,target_live
+"Rao's Homemade Penne Rigate Pasta, 16oz",Pasta,16 oz,3.19,target_live
+"Rao's Homemade Spaghetti Pasta, 16oz",Pasta,16 oz,3.19,target_live
+"La Choy Chow Mein Noodles, 12oz",Ramen & Noodles,12 oz,2.39,target_live
+"Hamburger Helper Four Cheese Lasagna, 5.5oz",Pantry,5.5 oz,1.69,target_live
+"Romero's Corn Tortilla Value Pack, 16oz/18ct",Bakery & Bread,18 ct,1.29,target_live
+"La Banderita Corn Tortillas, 24.9oz/30ct",Bakery & Bread,30 ct,2.59,target_live
+"Mission Super Soft White Corn Tortillas, 25oz/30ct",Bakery & Bread,30 ct,2.79,target_live
+"Mission Super Soft Yellow Corn Tortillas, 25oz/30ct",Bakery & Bread,30 ct,2.79,target_live
+"Mission Super Soft White Corn Tortillas, 4lb/80ct",Bakery & Bread,80 ct,4.19,target_live
+"Guerrero White Corn Tortillas, 4.16lb/80ct",Bakery & Bread,80 ct,4.29,target_live
+"Guerrero King Size White Corn Tortillas, 35oz/30ct",Bakery & Bread,30 ct,2.99,target_live
+"Mission Street Taco White Corn Tortillas, 12.6oz/24ct",Bakery & Bread,24 ct,2.79,target_live
+"Mission Street Taco Yellow Corn Tortillas, 12.6oz/24ct",Bakery & Bread,24 ct,2.79,target_live
+"Mission Extra Thin Yellow Corn Tortillas, 5.6oz/24ct",Bakery & Bread,24 ct,2.99,target_live
+"Mission Super Size Yellow Corn Tortillas, 10.84oz/10ct",Bakery & Bread,10 ct,2.59,target_live
+"Mission 25 Calorie Yellow Corn Tortillas, 11.25oz/30ct",Bakery & Bread,30 ct,3.19,target_live
+"La Tortilla Factory Hand Made White Corn Tortillas, 11.57oz/8ct",Bakery & Bread,8 ct,2.99,target_live
+"Siete Maiz Yellow Corn Tortilla, 9.7oz",Bakery & Bread,9.7 oz,4.69,target_live
+"Ortega Yellow Corn Taco Shells, 4.9oz/12ct",Bakery & Bread,12 ct,2.23,target_live
+"Old El Paso Stand 'n Stuff Yellow Corn Taco Shells, 4.7oz/10ct",Bakery & Bread,10 ct,2.29,target_live
+"Siete Maiz Hard Corn Taco Shells, 5.5oz/12ct",Bakery & Bread,12 ct,5.49,target_live
+"Guerrero Tostadas Caseras Amarillas, 12.8oz/22ct",Bakery & Bread,22 ct,2.99,target_live
+"Mission Taco Size Flour Tortillas, 17.5oz/10ct",Bakery & Bread,10 ct,2.39,target_live
+"Mission Street Taco Flour Tortillas, 11oz/12ct",Bakery & Bread,12 ct,2.79,target_live
+"Mission Taco Size Flour Tortillas, 35oz/20ct",Bakery & Bread,20 ct,5.69,target_live
+"Old El Paso Soft Flour Tortillas, 8.2oz/10ct",Bakery & Bread,10 ct,2.79,target_live
+"Old El Paso Flour Burrito Tortillas, 11oz/8ct",Bakery & Bread,8 ct,2.79,target_live
+"10"" Flour Tortillas, 8ct - Market Pantry",Bakery & Bread,8 ct,2.49,target_live
+"Romero's Sonora Style Soft Flour Taco Tortillas, 16oz/12ct",Bakery & Bread,12 ct,3.19,target_live
+"Corn Starch, 16oz - Good & Gather",Baking,16 oz,1.99,user_screenshot
+"Argo 100% Pure Corn Starch, 16oz",Baking,16 oz,2.79,user_screenshot
+"Galbani Whole Milk Ricotta Cheese, 15oz",Cheese,15 oz,3.89,user_screenshot
+"Galbani Part Skim Ricotta Cheese, 15oz",Cheese,15 oz,3.89,user_screenshot
+"Galbani Italian Style Whole Milk Mozzarella Cheese, 16oz",Cheese,16 oz,5.59,user_screenshot
+"Sargento Balanced Breaks Cheese & Ritz Crackers, 4.5oz/3ct",Snacks,3 ct,3.39,user_screenshot
+"Mild Heat Restaurant Style Salsa, 16oz - Good & Gather",Sauces,16 oz,3.19,target_live
+"Tostitos Chunky Salsa Mild Dip, 15.5oz",Sauces,15.5 oz,4.29,target_live
+"Tostitos Restaurant Style Salsa Dip Medium, 15.5oz",Sauces,15.5 oz,4.29,target_live
+"Tostitos Salsa Con Queso Medium Dip, 15oz",Sauces,15 oz,4.99,target_live
+"Cholula Original Medium Salsa, 12oz",Sauces,12 oz,3.69,target_live
+"Mission Round Yellow Corn Tortilla Chips, 11oz",Snacks,11 oz,2.39,target_live
+"Mission Strips White Corn Tortilla Chips, 11oz",Snacks,11 oz,2.39,target_live
+"Mission Thin & Crispy Yellow Corn Tortilla Chips, 9oz",Snacks,9 oz,2.39,target_live
+"Juantonio's Tortilla Chips, 15oz",Snacks,15 oz,2.39,target_live
+"Calidad Yellow Corn Tortilla Chips, 11oz",Snacks,11 oz,2.49,target_live
+"Santitas White Corn Tortilla Chips, 11oz",Snacks,11 oz,2.89,target_live
+"Tostitos Scoops! Tortilla Chips, 10oz",Snacks,10 oz,4.59,target_live
+"Tostitos Bite Size Rounds Tortilla Chips, 12oz",Snacks,12 oz,4.59,target_live
+"Tostitos Crispy Rounds Tortilla Chips, 12oz",Snacks,12 oz,4.59,target_live
+"Tostitos Hint of Lime Tortilla Chips, 11oz",Snacks,11 oz,4.59,target_live
+"Tostitos Lightly Salted Restaurant Style Tortilla Chips, 12oz",Snacks,12 oz,4.59,target_live
+"Tostitos Cantina Thin & Crispy Tortilla Chips, 8oz",Snacks,8 oz,4.29,target_live
+"Tostitos Cantina Traditional Tortilla Chips, 11oz",Snacks,11 oz,4.29,target_live
+"Tostitos Scoops! Party Size Tortilla Chips, 14.5oz",Snacks,14.5 oz,6.69,target_live
+"Tostitos Bite Size Party Size Tortilla Chips, 17oz",Snacks,17 oz,6.69,target_live
+"Doritos Nacho Cheese Tortilla Chips, 9.25oz",Snacks,9.25 oz,4.59,target_live
+"Doritos Cool Ranch Tortilla Chips, 9.25oz",Snacks,9.25 oz,4.59,target_live
+"Doritos Nacho Cheese Party Size Tortilla Chips, 14.5oz",Snacks,14.5 oz,6.69,target_live
+"Doritos Spicy Sweet Chili Tortilla Chips, 9.5oz",Snacks,9.5 oz,4.59,target_live
+"Chili Lime Rolled Corn Tortilla Chips, 11oz - Good & Gather",Snacks,11 oz,4.19,target_live
+"Siete Maiz Tortilla Chips, 7.5oz",Snacks,7.5 oz,4.99,target_live
+"Siete Sea Salt Tortilla Chips, 5oz",Snacks,5 oz,4.59,target_live
+"Fleischmann's RapidRise Instant Yeast, 0.25oz/3ct",Baking,3 ct,1.99,user_screenshot
+"Fleischmann's Active Dry Yeast, 4oz jar",Baking,4 oz,6.29,user_screenshot
+"Bob's Red Mill Nutritional Yeast (NOT baking yeast), 5oz",Pantry,5 oz,6.29,user_screenshot
+"Legendairy Milk Brewer's Yeast Powder (NOT baking yeast), 16oz",Pantry,16 oz,16.99,user_screenshot
+"Campbell's Condensed Cream of Mushroom Soup, 10.5oz",Broth & Soup,10.5 oz,1.49,target_live
+"Campbell's Condensed Cream of Chicken Soup, 10.5oz",Broth & Soup,10.5 oz,1.49,target_live
+"Campbell's Condensed Cream of Celery Soup, 10.5oz",Broth & Soup,10.5 oz,2.19,target_live
+"Campbell's Condensed Cream of Potato Soup, 10.5oz",Broth & Soup,10.5 oz,2.19,target_live
+"Campbell's Condensed Cheddar Cheese Soup, 10.5oz",Broth & Soup,10.5 oz,2.19,target_live
+"Campbell's Condensed Broccoli Cheese Soup, 10.5oz",Broth & Soup,10.5 oz,2.19,target_live
+"Campbell's Condensed French Onion Soup, 10.5oz",Broth & Soup,10.5 oz,2.19,target_live
+"Campbell's Condensed Tomato Soup, 10.75oz",Broth & Soup,10.75 oz,1.49,target_live
+"Campbell's Condensed Chicken Noodle Soup, 10.75oz",Broth & Soup,10.75 oz,1.49,target_live
+"Campbell's Condensed Vegetable Soup, 10.5oz",Broth & Soup,10.5 oz,2.19,target_live
+"Campbell's Condensed Chicken with Rice Soup, 10.5oz",Broth & Soup,10.5 oz,2.19,target_live
+"Campbell's Condensed Bean with Bacon Soup, 11.5oz",Broth & Soup,11.5 oz,2.19,target_live
+"Campbell's Condensed Healthy Request Cream of Mushroom Soup, 10.5oz",Broth & Soup,10.5 oz,2.19,target_live
+"Campbell's Condensed Healthy Request Cream of Chicken Soup, 10.5oz",Broth & Soup,10.5 oz,2.19,target_live
+"Campbell's Chunky Classic Chicken Noodle Soup, 18.6oz",Broth & Soup,18.6 oz,2.49,target_live
+"Pacific Foods Organic Condensed Cream of Mushroom Soup, 10.5oz",Broth & Soup,10.5 oz,2.89,target_live
+"Pacific Foods Organic Condensed Cream of Chicken Soup, 10.5oz",Broth & Soup,10.5 oz,2.89,target_live
+"Pacific Foods Organic Condensed Cream of Celery Soup, 10.5oz",Broth & Soup,10.5 oz,2.89,target_live
+"Frozen Whole Kernel Corn, 12oz - Good & Gather",Frozen,12 oz,0.99,target_live
+"Frozen Gold & White Corn Blend, 12oz - Good & Gather",Frozen,12 oz,0.99,target_live
+"Frozen Mixed Vegetables, 12oz - Good & Gather",Frozen,12 oz,0.99,target_live
+"Frozen Sweet Peas, 12oz - Good & Gather",Frozen,12 oz,0.99,target_live
+"Frozen Cut Green Beans, 12oz - Good & Gather",Frozen,12 oz,0.99,target_live
+"Frozen Crinkle-Cut Carrots, 12oz - Good & Gather",Frozen,12 oz,0.99,target_live
+"Frozen Cut Broccoli, 12oz - Good & Gather",Frozen,12 oz,0.99,target_live
+"Frozen Broccoli Florets, 12oz - Good & Gather",Frozen,12 oz,1.29,target_live
+"Frozen Broccoli Cauliflower & Carrots Blend, 12oz - Good & Gather",Frozen,12 oz,1.29,target_live
+"Frozen Cauliflower, 12oz - Good & Gather",Frozen,12 oz,1.79,target_live
+"Frozen Cut Leaf Spinach, 10oz - Good & Gather",Frozen,10 oz,1.59,target_live
+"Frozen Organic Spinach, 10oz - Good & Gather",Frozen,10 oz,2.59,target_live
+"Frozen Petite Whole Green Beans, 12oz - Good & Gather",Frozen,12 oz,1.99,target_live
+"Frozen Stir Fry Vegetable Blend, 12oz - Good & Gather",Frozen,12 oz,2.59,target_live
+"Frozen Roasted Sweet Potato Chunks, 12oz - Good & Gather",Frozen,12 oz,2.59,target_live
+"Riced Frozen Cauliflower, 10oz - Good & Gather",Frozen,10 oz,2.29,target_live
+"Frozen Steam-in-bag Edamame, 12oz - Good & Gather",Frozen,12 oz,1.99,target_live
+"Frozen Steam-in-bag Mukimame, 12oz - Good & Gather",Frozen,12 oz,2.79,target_live
+"Organic Frozen Peas and Carrots, 10oz - Good & Gather",Frozen,10 oz,2.19,target_live
+"Organic Frozen Broccoli Florets, 10oz - Good & Gather",Frozen,10 oz,2.19,target_live
+"Frozen Street Corn, 10oz - Good & Gather",Frozen,10 oz,4.39,target_live
+"Frozen Mediterranean-Style Seasoned Vegetable Blend, 14oz - Good & Gather",Frozen,14 oz,4.79,target_live
+"Birds Eye Steamfresh Frozen Sweet Peas, 10oz",Frozen,10 oz,1.39,target_live
+"Birds Eye Steamfresh Frozen Broccoli Cauliflower & Carrots, 12oz",Frozen,12 oz,1.99,target_live
+"Oscar Mayer Original Wieners Hot Dogs, 16oz/10ct",Meat & Seafood,10 ct,2.99,target_live
+"Oscar Mayer Bun-Length Wieners Hot Dogs, 16oz/8ct",Meat & Seafood,8 ct,2.99,target_live
+"Ball Park Bun Size Franks, 15oz/8ct",Meat & Seafood,8 ct,2.99,target_live
+"Ball Park Franks (Pork), 15oz/8ct",Meat & Seafood,8 ct,2.99,target_live
+"Ball Park Bun Size Beef Franks, 15oz/8ct",Meat & Seafood,8 ct,5.99,target_live
+"Ball Park Beef Franks, 15oz/8ct",Meat & Seafood,8 ct,5.99,target_live
+"Oscar Mayer Original Classic Beef Franks, 15oz/10ct",Meat & Seafood,10 ct,4.99,target_live
+"Oscar Mayer Uncured Turkey Franks, 16oz/8ct",Meat & Seafood,8 ct,6.49,target_live
+"Nathan's Famous Skinless Beef Franks, 12oz/8ct",Meat & Seafood,8 ct,6.39,target_live
+"Nathan's Famous Bun Length Skinless Beef Franks, 12oz/8ct",Meat & Seafood,8 ct,6.39,target_live
+"Hebrew National Beef Franks, 10.3oz/6ct",Meat & Seafood,6 ct,5.99,target_live
+"Hebrew National Bun Length Beef Franks, 12oz",Meat & Seafood,12 oz,6.49,target_live
+"Vienna Beef Franks Chicago Hot Dog, 12oz/8ct",Meat & Seafood,8 ct,7.39,target_live
+"Applegate Uncured Turkey Hot Dog, 10oz",Meat & Seafood,10 oz,5.99,target_live
+"Applegate Natural Grass-Fed Uncured Beef Hot Dog, 10oz",Meat & Seafood,10 oz,6.69,target_live
+"Applegate Pork & Beef Hot Dogs, 10oz",Meat & Seafood,10 oz,5.39,target_live
+"Boar's Head All Beef Franks, 14oz",Meat & Seafood,14 oz,9.99,target_live
+"Ambassador Old Fashion Beef Wieners, 12.8oz",Meat & Seafood,12.8 oz,5.19,target_live
+"Kraft Original Mac and Cheese Dinner, 7.25oz",Pantry,7.25 oz,1.19,target_live
+"Kraft Original Mac and Cheese Dinner, 11oz",Pantry,11 oz,1.59,target_live
+"Kraft Original Mac and Cheese Dinner, 5ct/36.25oz",Pantry,5 ct,5.39,target_live
+"Kraft Blue Box Original Mac and Cheese, 12ct/87oz",Pantry,12 ct,12.69,target_live
+"Kraft Spirals Original Mac and Cheese, 5.5oz",Pantry,5.5 oz,1.19,target_live
+"Kraft Thick 'n Creamy Mac and Cheese, 7.25oz",Pantry,7.25 oz,1.19,target_live
+"Kraft Three Cheese Mac and Cheese, 7.25oz",Pantry,7.25 oz,1.19,target_live
+"Kraft Deluxe Original Cheddar Mac and Cheese, 14oz",Pantry,14 oz,2.69,target_live
+"Kraft Original Mac and Cheese Microwavable Cups, 8.2oz/4ct",Pantry,4 ct,4.99,target_live
+"Kraft Power Mac Original Mac and Cheese, 7.25oz",Pantry,7.25 oz,2.69,target_live
+"Kraft Singles American Cheese Slices, 12oz/16ct",Cheese,16 ct,3.99,target_live
+"Kraft Singles American Cheese Slices, 16oz/24ct",Cheese,24 ct,4.99,target_live
+"Kraft Singles Sliced American White Cheese, 16oz/24ct",Cheese,24 ct,4.99,target_live
+"Kraft Deli Deluxe American Cheese Slices, 16oz/24ct",Cheese,24 ct,7.29,target_live
+"Kraft 100% Grated Parmesan Cheese, 8oz",Cheese,8 oz,4.79,target_live
+"Kraft 100% Grated Parmesan Cheese, 16oz",Cheese,16 oz,8.49,target_live
+"Kraft Grated Parmesan & Romano Cheese, 8oz",Cheese,8 oz,4.79,target_live
+"Kraft Shredded Parmesan Cheese, 5oz",Cheese,5 oz,4.19,target_live
+"Concord Grape Jelly, 18oz - Market Pantry",Pantry,18 oz,1.99,target_live
+"Grape Jelly, 20oz - Market Pantry",Pantry,20 oz,2.99,target_live
+"Welch's Concord Grape Jelly, 30oz",Pantry,30 oz,3.19,target_live
+"Welch's Squeeze Concord Grape Jelly, 20oz",Pantry,20 oz,3.29,target_live
+"Welch's Concord Grape Jam, 18oz",Pantry,18 oz,2.99,target_live
+"Smucker's Squeeze Grape Jelly, 20oz",Pantry,20 oz,3.39,target_live
+"Reduced Sugar Grape Fruit Spread, 15.5oz - Good & Gather",Pantry,15.5 oz,3.99,target_live
+"Strawberry Preserves, 18oz - Market Pantry",Pantry,18 oz,2.99,target_live
+"Smucker's Seedless Strawberry Jam, 18oz",Pantry,18 oz,4.59,target_live
+"Smucker's Squeeze Strawberry Fruit Spread, 20oz",Pantry,20 oz,3.99,target_live
+"Smucker's Strawberry Jam, 30oz",Pantry,30 oz,4.79,target_live
+"Smucker's Peach Preserves, 18oz",Pantry,18 oz,4.79,target_live
+"Frosted Flakes Breakfast Cereal, 8.6-13.5oz",Breakfast,box,3.99,target_live_range_low
+Kellogg's Rice Krispies Cereal,Breakfast,box,3.99,target_live_range_low
+"Kellogg's Froot Loops Wild Berry Cereal, 8.6oz",Breakfast,8.6 oz,3.99,target_live
+Special K Red Berries Breakfast Cereal,Breakfast,box,3.99,target_live_range_low
+Raisin Bran Crunch Breakfast Cereal,Breakfast,box,3.99,target_live_range_low
+Kellogg's Frosted Mini-Wheats Cereal,Breakfast,box,3.99,target_live_range_low
+General Mills Lucky Charms Cereal,Breakfast,box,2.99,target_live_range_low
+"Cheerios Protein Honey Nut Family Size Cereal, 14oz",Breakfast,14 oz,5.29,target_live
+"General Mills Kix Cereal, 18oz",Breakfast,18 oz,5.29,target_live
+"Golden Grahams Cereal Family Size, 18.9oz",Breakfast,18.9 oz,5.29,target_live
+"Cinnamon Toast Crunch Family Size Cereal, 18.8oz",Breakfast,18.8 oz,5.29,target_live
+"Cookie Crisp Cereal Family Size, 18.3oz",Breakfast,18.3 oz,5.29,target_live
+"Trix Breakfast Cereal Family Size, 16.1oz",Breakfast,16.1 oz,5.29,target_live
+"Post Honey Oh's Breakfast Cereal, 20oz",Breakfast,20 oz,4.23,target_live
+"Lee Kum Kee Hoisin Sauce, 20oz",Sauces,20 oz,4.99,user_screenshot
+"Kikkoman Sweet & Sour Sauce, 11.5 fl oz",Sauces,11.5 fl oz,3.19,target_live
+"Kikkoman Stir Fry Sauce, 11.4oz",Sauces,11.4 oz,3.49,target_live
+"Kikkoman Teriyaki Marinade & Sauce, 10oz",Sauces,10 oz,4.29,target_live
+"Thai Curry Noodle Stir Fry Sauce, 12 fl oz - Good & Gather",Sauces,12 fl oz,2.99,target_live
+"Maggi Asian Seasoning Sauce, 6.7 fl oz",Sauces,6.7 fl oz,4.89,target_live
+"Panda Express Orange Sauce, 20.75 fl oz",Sauces,20.75 fl oz,4.99,target_live
+"Panda Express Mandarin Sauce, 20.5 fl oz",Sauces,20.5 fl oz,4.99,target_live
+"MOMOFUKU Garlic Chili Crunch Oil, 5.5oz",Sauces,5.5 oz,10.39,target_live
+"PF Chang's Chicken Lettuce Wrap Sauce, 8oz",Sauces,8 oz,2.79,target_live
+"PF Chang's Honey Chicken Cooking Sauce, 8oz",Sauces,8 oz,2.79,target_live
+"BowlCut Classic Stir Fry Sauce, 10oz",Sauces,10 oz,8.99,target_live
+"Crispy Crinkle Cut French Fries, 32oz - Market Pantry",Frozen,32 oz,3.29,target_search_snippet
+"Crispy Potato Puffs (tots), 32oz - Market Pantry",Frozen,32 oz,3.29,target_search_snippet
+"Frozen Crispy Hash Brown Potato Patties, 22.5oz/10ct - Market Pantry",Frozen,10 ct,3.29,target_search_snippet
+"Ore-Ida Extra Crispy Fast Food Fries, 26oz",Frozen,26 oz,4.39,target_search_snippet
+"Ore-Ida Crispy Crinkles French Fries, 32oz",Frozen,32 oz,4.69,target_search_snippet
+"Ore-Ida Tater Tots Seasoned Shredded Potatoes, 32oz",Frozen,32 oz,4.69,target_search_snippet
+"Ore-Ida Shredded Hash Brown Potatoes, 30oz",Frozen,30 oz,4.69,target_search_snippet
+"Ore-Ida Crispy Crowns Seasoned Shredded Potatoes, 30oz",Frozen,30 oz,4.69,target_search_snippet
+"Ore-Ida Extra Crispy Tater Tots, 28oz",Frozen,28 oz,4.89,target_search_snippet
+"Simply Potatoes Shredded Hash Browns, 20oz",Frozen,20 oz,4.29,target_search_snippet
+"Alexia Frozen House Cut Fries, 28oz",Frozen,28 oz,5.99,target_search_snippet
+"Rice Vinegar, 12.7 fl oz - Good & Gather",Oils & Vinegar,12.7 fl oz,2.69,user_screenshot
+"Mizkan 4% Seasoned Rice Vinegar, 12 fl oz",Oils & Vinegar,12 fl oz,2.99,user_screenshot
+"Thai Kitchen Premium Fish Sauce, 6.76 fl oz",Sauces,6.76 fl oz,4.69,user_screenshot
+"Three Crabs Fish Sauce, 10 fl oz",Sauces,10 fl oz,8.39,user_screenshot
+"Bachan's Original Japanese BBQ Sauce, 17oz",Sauces,17 oz,8.49,user_screenshot
+"Primal Kitchen Dairy-Free Buffalo Sauce, 8.5oz",Condiments,8.5 oz,4.99,user_screenshot
+"Primal Kitchen Special Dippin' Sauce, 10oz",Condiments,10 oz,8.29,user_screenshot
+"Tari Zesty Verde Creamy Hot Sauce, 11.8oz",Condiments,11.8 oz,5.99,user_screenshot
+"Tari Rocoto Pepper Hot Sauce, 11.8oz",Condiments,11.8 oz,5.99,user_screenshot
+"Lee Kum Kee Panda Oyster Sauce, 9oz",Sauces,9 oz,3.69,user_screenshot
+"Lee Kum Kee Premium Oyster Sauce, 9oz",Sauces,9 oz,5.49,user_screenshot
+"CARBONE Marinara Sauce, 24oz",Sauces,24 oz,8.49,user_screenshot
+"Rao's Homemade Marinara Sauce, 24oz",Sauces,24 oz,7.59,user_screenshot
+"Sauz Savory Garlic Marinara, 25oz",Sauces,25 oz,7.99,user_screenshot
+"Mizkan Mirin Sweet Cooking Seasoning, 12 fl oz",Sauces,12 fl oz,2.99,user_screenshot
+"Betty Crocker Super Moist Cake Mix (any variety), 13.25oz",Baking,13.25 oz,1.99,target_live
+"Betty Crocker White Super Moist Cake Mix, 14.25oz",Baking,14.25 oz,1.99,target_live
+"Betty Crocker Angel Food White Cake Mix, 16oz",Baking,16 oz,4.39,target_live
+"Pillsbury Funfetti Premium Cake & Cupcake Mix, 15.25oz",Baking,15.25 oz,1.99,target_live
+"Pillsbury Moist Supreme Pumpkin Cake Mix, 15.25oz",Baking,15.25 oz,1.89,target_live
+"Pillsbury Pistachio Cake Mix, 15.25oz",Baking,15.25 oz,1.69,target_live
+"King Arthur Confetti Cake and Cupcake Mix, 12oz",Baking,12 oz,4.99,target_live
+"Krusteaz Cinnamon Crumb Cake & Muffin Mix, 21oz",Baking,21 oz,3.89,target_live
+"Thai Kitchen Gluten Free Stir Fry Rice Noodles, 14oz",Ramen & Noodles,14 oz,4.69,user_screenshot
+"Taste of Thai Straight Cut Rice Noodles, 16oz",Ramen & Noodles,16 oz,5.99,user_screenshot
+"Taste of Thai Vermicelli Rice Noodles (Angel Hair), 8.8oz",Ramen & Noodles,8.8 oz,3.39,user_screenshot
+"Lotus Foods Pad Thai Rice Noodles Organic, 8oz",Ramen & Noodles,8 oz,4.69,user_screenshot
+"Bibigo Cooked Sticky White Rice, 22.2oz/3ct",Rice & Grains,3 ct,4.99,user_screenshot
+"Brami Italian Protein Radiatori Pasta, 12oz",Pasta,12 oz,3.49,user_screenshot
+"Soy Sauce, 15oz - Market Pantry",Sauces,15 oz,1.89,target_live
+"Less Sodium Soy Sauce, 15 fl oz - Market Pantry",Sauces,15 fl oz,1.89,target_live
+"San-J Organic Tamari Wheat-Free Soy Sauce, 10oz",Sauces,10 oz,4.99,target_live
+"Aloha Shoyu Regular Soy Sauce, 24oz",Sauces,24 oz,3.99,target_live
+"Bachan's Miso Japanese BBQ Sauce, 17oz",Sauces,17 oz,8.49,target_live
+"Bachan's Sweet Honey Japanese BBQ Sauce, 17oz",Sauces,17 oz,8.49,target_live
+"Bachan's Sweet Pineapple Japanese BBQ Sauce, 16.5oz",Sauces,16.5 oz,8.49,target_live
+"Bachan's Original Dipping Sauce, 16oz",Sauces,16 oz,7.39,target_live
+"Bachan's Garlic Dipping Sauce, 15.5oz",Sauces,15.5 oz,7.39,target_live
+"Bibigo Korean-Style Hot & Sweet Gochujang Sauce, 12.16oz",Sauces,12.16 oz,3.99,target_live
+"Terry Ho's Yum Yum Sauce, 16 fl oz",Sauces,16 fl oz,4.99,target_live
+"Lawry's Teriyaki with Pineapple Juice Marinade, 12 fl oz",Sauces,12 fl oz,3.59,target_live
+"Chick-fil-A Dipping Sauce, 16 fl oz",Condiments,16 fl oz,4.19,target_live
+"Chick-fil-A Polynesian Dipping Sauce, 16 fl oz",Condiments,16 fl oz,4.19,target_live
+"Coconut Secret Soy-Free Seasoning Sauce, 8oz",Sauces,8 oz,6.89,target_live
+"Kevin's Natural Foods Teriyaki Sauce, 7oz",Sauces,7 oz,3.99,target_live
+"Samyang Buldak Carbonara Hot Sauce, 7.05oz",Condiments,7.05 oz,5.69,target_live
+"Pillsbury Grands! Flaky Layers Biscuits, 16.3oz/8ct",Refrigerated Dough,8 ct,3.39,target_live
+"Pillsbury Grands! Southern Homestyle Buttermilk Biscuits, 16.3oz/8ct",Refrigerated Dough,8 ct,3.39,target_live
+"Pillsbury Grands! Homestyle Butter Tastin' Biscuits, 16.3oz/8ct",Refrigerated Dough,8 ct,3.39,target_live
+"Pillsbury Original Crescent Rolls, 8oz/8ct",Refrigerated Dough,8 ct,3.29,target_live
+"Pillsbury Butter Flake Crescent Rolls, 8oz/8ct",Refrigerated Dough,8 ct,3.29,target_live
+"Pillsbury Original Crescent Rolls, 2pk/8oz Cans",Refrigerated Dough,2 pk,5.29,target_live
+"Pillsbury Ready-to-Bake Pie Crusts, 14.1oz/2ct",Refrigerated Dough,2 ct,4.59,target_live
+"Pillsbury Classic Pizza Crust, 13.8oz",Refrigerated Dough,13.8 oz,4.19,target_live
+"Pillsbury Cinnamon Rolls with Icing, 12.4oz/8ct",Refrigerated Dough,8 ct,3.39,target_live
+"Pillsbury Cinnamon Rolls with Icing, 2pk/12.4oz Cans",Refrigerated Dough,2 pk,5.29,target_live
+"Pillsbury Grands! Cinnamon Rolls with Icing, 17.5oz/5ct",Refrigerated Dough,5 ct,4.99,target_live
+"Pillsbury Grands! Cinnamon Rolls with Cream Cheese Icing, 17.5oz/5ct",Refrigerated Dough,5 ct,4.99,target_live
+"Pillsbury Chocolate Chip Cookie Dough, 16oz/24ct",Refrigerated Dough,24 ct,4.19,target_live
+"Pillsbury Chocolate Chip Cookie Dough, 30oz",Refrigerated Dough,30 oz,5.49,target_live
+"Pillsbury Sugar Cookie Dough, 16oz/24ct",Refrigerated Dough,24 ct,4.19,target_live
+"Pillsbury Big Deluxe Chocolate Chip Cookie Dough, 16oz/12ct",Refrigerated Dough,12 ct,4.19,target_live
+"Pillsbury Ready to Bake Oreo Cookies, 16oz/12ct",Refrigerated Dough,12 ct,3.99,target_live
+"Sweet Relish, 12oz - Market Pantry",Pickles & Olives,12 oz,2.49,target_live
+"Organic Sweet Relish, 8 fl oz - Good & Gather",Pickles & Olives,8 fl oz,2.89,target_live
+"Heinz Sweet Relish, 12.7 fl oz",Pickles & Olives,12.7 fl oz,3.89,target_live
+"Heinz Dill Relish, 12.7 fl oz",Pickles & Olives,12.7 fl oz,3.89,target_live
+"Frank's Quality Sauerkraut, 14oz",Pickles & Olives,14 oz,1.69,target_live
+"Boar's Head Sauerkraut, 16oz",Pickles & Olives,16 oz,3.49,target_live
+"Cleveland Kitchen Classic Sauerkraut, 16oz",Pickles & Olives,16 oz,5.29,target_live
+"Seoul Vegan Original Kimchi, 14oz",Pickles & Olives,14 oz,5.19,target_live
+"Seoul Vegan Spicy Kimchi, 14oz",Pickles & Olives,14 oz,5.19,target_live
+"Cleveland Kitchen Classic Kimchi, 16oz",Pickles & Olives,16 oz,5.29,target_live
+"Cleveland Kitchen Kimchi Pickles, 24oz",Pickles & Olives,24 oz,5.49,target_live
+"High Max Turnip Kim Chee, 14oz",Pickles & Olives,14 oz,4.99,target_live
+"Lightly Salted Dry Roasted Peanuts, 16oz - Good & Gather",Nuts & Seeds,16 oz,2.69,target_live
+"Unsalted Dry Roasted Peanuts, 16oz - Good & Gather",Nuts & Seeds,16 oz,2.69,target_live
+"Raw Whole Almonds, 10.5oz - Good & Gather",Nuts & Seeds,10.5 oz,5.39,target_live
+"Raw Whole Almonds, 32oz - Good & Gather",Nuts & Seeds,32 oz,13.49,target_live
+"Lightly Salted Roasted Almonds, 11oz - Good & Gather",Nuts & Seeds,11 oz,5.39,target_live
+"Lightly Salted Roasted Whole Cashews, 9.5oz - Good & Gather",Nuts & Seeds,9.5 oz,5.19,target_live
+"Lightly Salted Roasted Whole Cashews, 30oz - Good & Gather",Nuts & Seeds,30 oz,11.49,target_live
+"Unsalted Roasted Whole Cashews, 30oz - Good & Gather",Nuts & Seeds,30 oz,11.49,target_live
+"Sea Salt Roasted Whole Cashews, 9.5oz - Good & Gather",Nuts & Seeds,9.5 oz,5.19,target_live
+"Honey Roasted Cashews, 8.5oz - Good & Gather",Nuts & Seeds,8.5 oz,5.19,target_live
+"Sea Salt Roasted Pistachios, 7oz - Good & Gather",Nuts & Seeds,7 oz,3.79,target_live
+"Sea Salt Dry Roasted Pistachio Kernels, 5.5oz - Good & Gather",Nuts & Seeds,5.5 oz,4.99,target_live
+"Sea Salt Roasted Pistachio Kernels, 12oz - Good & Gather",Nuts & Seeds,12 oz,10.69,target_live
+"Glazed Pecans, 9oz - Good & Gather",Nuts & Seeds,9 oz,5.89,target_live
+"Diamond of California Chopped Pecans, 8oz",Nuts & Seeds,8 oz,6.49,target_search_snippet
+"Diamond of California Chopped Pecans, 2.25oz",Nuts & Seeds,2.25 oz,2.69,target_search_snippet
+"Diamond Chopped Walnuts, 8oz",Nuts & Seeds,8 oz,4.69,target_search_snippet
+"Unsalted Raw Mixed Nuts, 30oz - Good & Gather",Nuts & Seeds,30 oz,13.99,target_live
+"Unsalted Roasted Mixed Nuts, 30oz - Good & Gather",Nuts & Seeds,30 oz,13.99,target_live
+"Sea Salt Roasted Mixed Nuts, 30oz - Good & Gather",Nuts & Seeds,30 oz,13.99,target_live
+"Lightly Salted Roasted Mixed Nuts, 9oz - Good & Gather",Nuts & Seeds,9 oz,5.99,target_live
+"Pistachio Mixed Nuts, 14.5oz - Good & Gather",Nuts & Seeds,14.5 oz,10.99,target_live
+"Heinz Brown Gravy, 12oz",Sauces,12 oz,2.99,target_live
+"Heinz Home Style Chicken Gravy, 12oz",Sauces,12 oz,2.99,target_live
+"Heinz Home Style Savory Beef Gravy, 12oz",Sauces,12 oz,2.99,target_live
+"Heinz Home Style Roasted Turkey Gravy, 12oz",Sauces,12 oz,2.99,target_live
+"Heinz Herbed Gravy Caramelized Onion & Thyme, 12oz",Sauces,12 oz,2.99,target_live
+"Heinz Herbed Gravy Garlic Rosemary, 12oz",Sauces,12 oz,2.99,target_live
+"Pioneer Brand Country Gravy Mix, 2.75oz",Sauces,2.75 oz,1.29,target_live
+"McCormick Pork Gravy Seasoning Mix, 0.87oz",Sauces,0.87 oz,1.79,target_live
+"McCormick Brown Gravy Mix, 0.87oz",Sauces,0.87 oz,1.69,target_search_snippet
+"McCormick Chicken Gravy Mix, 0.87oz",Sauces,0.87 oz,1.69,target_search_snippet
+"Michael's of Brooklyn Homestyle Gravy Sauce, 32oz",Sauces,32 oz,7.49,target_live
+"Buttermilk Pancake & Waffle Mix, 32oz - Good & Gather",Breakfast,32 oz,1.99,target_live
+"Brown Butter Banana Bread Pancake & Waffle Mix, 16oz - Good & Gather",Breakfast,16 oz,2.69,target_live
+"Krusteaz Buttermilk Pancake Mix, 2lb",Breakfast,2 lb,2.99,target_live
+"Pearl Milling Company Buttermilk Complete Pancake & Waffle Mix, 2lb",Breakfast,2 lb,3.39,target_live
+"Bisquick Original Pancake and Baking Mix, 40oz",Breakfast,40 oz,5.19,target_live
+"Kodiak Power Cakes Buttermilk Pancake & Waffle Mix, 20oz",Breakfast,20 oz,5.99,target_live
+"Kodiak Power Cakes Buttermilk Flapjack & Waffle Mix Grizzly, 36oz",Breakfast,36 oz,9.79,target_live
+"King Arthur Gluten Free Pancake Mix, 15oz",Breakfast,15 oz,5.89,target_live
+"Flourish Buttermilk Protein Pancake & Waffle Mix, 16oz",Breakfast,16 oz,6.99,target_live
+"Stonewall Kitchen Farmhouse Pancake & Waffle Mix, 33oz",Breakfast,33 oz,9.99,target_live
+"Betty Crocker Rich & Creamy Vanilla Frosting, 16oz",Baking,16 oz,1.99,target_live
+"Betty Crocker Rich & Creamy Chocolate Frosting, 16oz",Baking,16 oz,1.99,target_live
+"Betty Crocker Rich & Creamy Milk Chocolate Frosting, 16oz",Baking,16 oz,1.99,target_live
+"Betty Crocker Rich & Creamy Cream Cheese Frosting, 16oz",Baking,16 oz,1.99,target_live
+"Betty Crocker Whipped Butter Cream Frosting, 12oz",Baking,12 oz,1.99,target_live
+"Betty Crocker White Frosting, 12oz",Baking,12 oz,1.99,target_live
+"Betty Crocker Rainbow Chip Frosting, 16oz",Baking,16 oz,2.59,target_live
+"Betty Crocker Squeezable Vanilla Frosting, 14.5oz",Baking,14.5 oz,3.89,target_live
+"Betty Crocker Squeezable Chocolate Frosting, 14.5oz",Baking,14.5 oz,3.89,target_live
+"Betty Crocker Cookie Icing (any color), 7oz",Baking,7 oz,4.59,target_live
+"Betty Crocker Decorating Icing Tube (any color), 4.25oz",Baking,4.25 oz,3.89,target_live
