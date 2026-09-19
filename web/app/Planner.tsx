@@ -8,6 +8,8 @@ type Row = {
   price: number | null;
   unit: string | null;
   category: string | null;
+  saved: number;
+  altBrand: string | null;
 };
 
 type Plan = {
@@ -15,6 +17,7 @@ type Plan = {
   list: Row[];
   total: number;
   perServing: number;
+  savings: number;
   missing: string[];
 };
 
@@ -117,15 +120,29 @@ export default function Planner() {
             </div>
           </div>
 
+          {plan.savings > 0 && (
+            <p className="savingsLine">
+              Saved ${plan.savings.toFixed(2)} buying store brand over name
+              brand on this list.
+            </p>
+          )}
+
           <h3 className="sectionHead">Shopping list</h3>
           <ul className="list">
             {plan.list.map((r, i) => (
               <li key={i} className="row">
                 <div className="rowMain">
-                  <span className="rowName">{r.ingredient}</span>
+                  <span className={r.saved > 0 ? "rowName rowSaved" : "rowName"}>
+                    {r.ingredient}
+                  </span>
                   <span className="rowMeta">
                     {r.product ? `${r.product} · ${r.unit}` : "Not sold at Target"}
                   </span>
+                  {r.saved > 0 && (
+                    <span className="rowSavedNote">
+                      Saved ${r.saved.toFixed(2)} vs {r.altBrand}
+                    </span>
+                  )}
                 </div>
                 <span className={r.price === null ? "rowNone" : "rowPrice"}>
                   {r.price === null ? "—" : `$${r.price.toFixed(2)}`}
