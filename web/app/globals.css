@@ -170,3 +170,168 @@ body {
   font-weight: 640;
   font-variant-numeric: tabular-nums;
 }
+
+/* ---- planner ---- */
+
+.ask {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 0.625rem;
+  margin-bottom: 0.875rem;
+}
+
+@media (max-width: 30rem) {
+  .ask {
+    grid-template-columns: 1fr;
+  }
+}
+
+.go {
+  padding: 0.6875rem 1.25rem;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  background: var(--ink);
+  color: #fff;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 560;
+  cursor: pointer;
+}
+
+.go:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-bottom: 2rem;
+}
+
+.chip {
+  padding: 0.375rem 0.6875rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+.chip:hover:not(:disabled) {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.error {
+  padding: 0.75rem 0.875rem;
+  border-left: 3px solid #b23b3b;
+  background: var(--paper);
+  color: #8a2b2b;
+  font-size: 0.9375rem;
+}
+
+.plan {
+  border: 1px solid var(--rule);
+  background: var(--paper);
+}
+
+.planHead {
+  padding: 1.25rem 1.25rem 1rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.planTitle {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 620;
+  letter-spacing: -0.02em;
+}
+
+.planMeta {
+  margin: 0.25rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.875rem;
+}
+
+/* The price is the whole point of the product, so it gets the boldness. */
+.priceBar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.priceBar > div {
+  background: var(--shelf);
+  padding: 1rem 1.25rem 1.125rem;
+}
+
+.priceLabel {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.8125rem;
+}
+
+.priceBig {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--save);
+  font-size: 2.125rem;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.sectionHead {
+  margin: 0;
+  padding: 1rem 1.25rem 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.plan .list {
+  border: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.rowNone {
+  flex-shrink: 0;
+  color: var(--ink-soft);
+  font-size: 1.0625rem;
+}
+
+.note {
+  margin: 0;
+  padding: 0.875rem 1.25rem;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-soft);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.steps {
+  margin: 0;
+  padding: 0.25rem 1.25rem 1.5rem 2.5rem;
+}
+
+.steps li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.foot {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-soft);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
