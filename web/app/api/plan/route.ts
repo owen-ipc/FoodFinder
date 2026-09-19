@@ -105,7 +105,7 @@ export async function POST(req: Request) {
   }
 
   const pantry = loadPantry();
-  const { matches, total, missing } = buildShoppingList(
+  const { matches, total, missing, savings } = buildShoppingList(
     recipe.ingredients,
     pantry
   );
@@ -125,9 +125,12 @@ export async function POST(req: Request) {
       price: m.item?.price ?? null,
       unit: m.item?.unit ?? null,
       category: m.item?.category ?? null,
+      saved: m.saved > 0 ? Number(m.saved.toFixed(2)) : 0,
+      altBrand: m.altBrand?.name ?? null,
     })),
     total: Number(total.toFixed(2)),
     perServing: Number(perServing.toFixed(2)),
+    savings: Number(savings.toFixed(2)),
     missing,
   });
 }
