@@ -158,6 +158,16 @@ body {
   line-height: 1.35;
 }
 
+.rowSaved {
+  font-weight: 700;
+}
+
+.rowSavedNote {
+  color: var(--save);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
 .rowMeta {
   color: var(--ink-soft);
   font-size: 0.8125rem;
@@ -287,6 +297,15 @@ body {
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.03em;
   line-height: 1;
+}
+
+.savingsLine {
+  margin: 0;
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid var(--rule);
+  color: var(--save);
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 
 .sectionHead {
