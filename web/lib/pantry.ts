@@ -13,6 +13,10 @@ export type Match = {
   ingredient: string;
   item: Item | null;
   score: number;
+  // Set when `item` is a Target store brand AND a name-brand match for the
+  // same product was found at a higher price. `saved` is that price gap.
+  altBrand: Item | null;
+  saved: number;
 };
 
 /* ------------------------------------------------------------------ */
@@ -331,6 +335,15 @@ const SOURCE_PENALTY: Record<string, number> = {
   target_live_range_low: 5000,
 };
 
+// Target's own private labels. Item names carry the brand as a trailing
+// "- Good & Gather" style suffix, unlike name brands which lead with the
+// brand ("Barilla ...", "Campbell's ...").
+const STORE_BRAND_RE = /-\s*(good\s*&\s*gather|market pantry|up\s*&\s*up)\s*$/i;
+
+function isStoreBrand(item: Item): boolean {
+  return STORE_BRAND_RE.test(item.name);
+}
+
 function score(want: string[], item: Item, hints: string[] | null): number {
   if (want.length === 0) return 0;
 
@@ -361,7 +374,7 @@ export function matchIngredient(ingredient: string, pantry: Item[]): Match {
 
   // Pantry staples we assume you already own (water, etc).
   if (want.length === 0) {
-    return { ingredient, item: null, score: 0 };
+    return { ingredient, item: null, score: 0, altBrand: null, saved: 0 };
   }
 
   // Try the full phrase, then progressively drop leading modifiers so
@@ -384,18 +397,51 @@ export function matchIngredient(ingredient: string, pantry: Item[]): Match {
       }
     }
 
-    if (best) return { ingredient, item: best, score: bestScore };
+    if (best) {
+      // The cart picked a Good & Gather / Market Pantry / up & up item.
+      // Check whether a name-brand version of the SAME product (same
+      // words, same aisle) exists, so we can show what buying store
+      // brand actually saved. Cheapest genuine match wins, which keeps
+      // the savings number conservative rather than cherry-picked.
+      let altBrand: Item | null = null;
+      if (isStoreBrand(best)) {
+        for (const item of pantry) {
+          if (isStoreBrand(item)) continue;
+          // Same aisle rule the main matcher uses. Without this, "milk"
+          // can "match" a frosting whose name happens to contain the
+          // word "milk" -- technically a word hit, but not the same
+          // product, so it can't be a fair brand comparison.
+          if (hints && !hints.includes(item.category)) continue;
+          const s = score(attempt, item, hints);
+          if (s === 0) continue;
+          if (!altBrand || item.price < altBrand.price) altBrand = item;
+        }
+      }
+      const saved =
+        altBrand && altBrand.price > best.price
+          ? altBrand.price - best.price
+          : 0;
+
+      return {
+        ingredient,
+        item: best,
+        score: bestScore,
+        altBrand: saved > 0 ? altBrand : null,
+        saved,
+      };
+    }
   }
 
-  return { ingredient, item: null, score: 0 };
+  return { ingredient, item: null, score: 0, altBrand: null, saved: 0 };
 }
 
 export function buildShoppingList(
   ingredients: string[],
   pantry: Item[]
-): { matches: Match[]; total: number; missing: string[] } {
+): { matches: Match[]; total: number; missing: string[]; savings: number } {
   const matches = ingredients.map((i) => matchIngredient(i, pantry));
   const total = matches.reduce((sum, m) => sum + (m.item?.price ?? 0), 0);
   const missing = matches.filter((m) => !m.item).map((m) => m.ingredient);
-  return { matches, total, missing };
+  const savings = matches.reduce((sum, m) => sum + m.saved, 0);
+  return { matches, total, missing, savings };
 }
