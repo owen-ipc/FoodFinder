@@ -489,7 +489,7 @@ body {
 
 .photoFrame {
   flex: 1;
-  margin-top: 1.6rem;
+  margin-top: 1.6rem 0;
   border: 2.5px dashed var(--paper);
   border-radius: 12px;
   background: rgba(250, 246, 236, 0.15);
