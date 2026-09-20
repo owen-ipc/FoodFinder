@@ -8,6 +8,12 @@ type Recipe = {
   ingredients: string[];
   steps: string[];
   photoQuery?: string;
+  nutrition?: {
+    calories: number;
+    proteinG: number;
+    carbsG: number;
+    fatG: number;
+  };
 };
 
 const SYSTEM = `You plan cheap meals that a college student can cook in a dorm or small apartment kitchen.
@@ -15,7 +21,8 @@ const SYSTEM = `You plan cheap meals that a college student can cook in a dorm o
 Always return this exact JSON shape, no prose and no markdown fences:
 {
   "recipes": [
-    { "title": string, "servings": number, "time": string, "ingredients": string[], "steps": string[], "photoQuery": string }
+    { "title": string, "servings": number, "time": string, "ingredients": string[], "steps": string[], "photoQuery": string,
+      "nutrition": { "calories": number, "proteinG": number, "carbsG": number, "fatG": number } }
   ]
 }
 
@@ -39,7 +46,13 @@ Rules for each recipe's "steps": 4 to 8 short imperative sentences.
 
 Rules for each recipe's "photoQuery":
 - This is separate from "title" -- "title" can be creative ("Fluffy Scrambled Eggs on Toast"), but "photoQuery" must be the plainest, most common English name for the dish, 2-4 words, the way you'd search for a photo of it ("scrambled eggs", "banana pancakes", "chicken fried rice", "grilled cheese sandwich").
-- No adjectives like "fluffy", "cheesy", "quick", "easy" -- just the dish itself.`;
+- No adjectives like "fluffy", "cheesy", "quick", "easy" -- just the dish itself.
+
+Rules for each recipe's "nutrition":
+- These four numbers are for the WHOLE recipe as written (every ingredient, full quantity listed) -- not per serving. Per-serving math is handled separately.
+- Estimate honestly from standard nutrition knowledge for each ingredient and the quantity actually listed, then add them up. Do not round to a suspiciously clean number out of laziness -- a real ingredient-by-ingredient sum rarely lands on an exact multiple of 50.
+- "calories" is whole kcal. "proteinG", "carbsG", "fatG" are grams, one decimal place.
+- This is a careful estimate, not a lab measurement -- there's no need to caveat that in the numbers themselves, just make them as realistic as you can from the actual ingredients and quantities given.`;
 
 // Looks up a photo for a dish name via a real Google Images search
 // (through SerpApi, since Google's own Custom Search API is closed to
@@ -50,7 +63,7 @@ Rules for each recipe's "photoQuery":
 // so this never breaks the recipe itself.
 async function findDishPhotoOnGoogle(
   query: string
-): Promise<{ url: string } | null> {
+): Promise<{ url: string; source: "Google" } | null> {
   const key = process.env.SERPAPI_KEY;
   if (!key) return null;
 
@@ -66,7 +79,7 @@ async function findDishPhotoOnGoogle(
       data?.images_results ?? [];
     for (const r of results.slice(0, 5)) {
       const url = r.original || r.thumbnail;
-      if (url) return { url };
+      if (url) return { url, source: "Google" };
     }
     return null;
   } catch (err) {
@@ -82,7 +95,7 @@ async function findDishPhotoOnGoogle(
 // that title. Returns null (never throws) if nothing usable turns up.
 async function findDishPhotoOnWikipedia(
   query: string
-): Promise<{ url: string; pageTitle: string } | null> {
+): Promise<{ url: string; source: "Wikipedia"; pageTitle: string } | null> {
   const headers = {
     "user-agent": "FoodFinder/1.0 (SteelHacks XIII student project)",
   };
@@ -98,7 +111,9 @@ async function findDishPhotoOnWikipedia(
     const data = await res.json();
     if (data?.type === "disambiguation") return null;
     const src = data?.thumbnail?.source;
-    return src ? { url: src as string, pageTitle: data.title as string } : null;
+    return src
+      ? { url: src as string, source: "Wikipedia" as const, pageTitle: data.title as string }
+      : null;
   }
 
   try {
@@ -137,8 +152,11 @@ async function findDishPhotoOnWikipedia(
 
 // Tries a real Google Images result first; falls back to Wikipedia if
 // SerpApi isn't configured yet or comes up empty. Always resolves to
-// either a usable URL or null -- never throws.
-async function findDishPhoto(query: string): Promise<{ url: string } | null> {
+// either a usable URL (tagged with which source it actually came from)
+// or null -- never throws.
+async function findDishPhoto(
+  query: string
+): Promise<{ url: string; source: "Google" | "Wikipedia" } | null> {
   const google = await findDishPhotoOnGoogle(query);
   if (google) return google;
   return await findDishPhotoOnWikipedia(query);
@@ -259,13 +277,38 @@ export async function POST(req: Request) {
   );
 
   return NextResponse.json({
-    recipes: recipes.map((recipe, i) => ({
-      title: recipe.title ?? craving,
-      servings: recipe.servings ?? 2,
-      time: recipe.time ?? "",
-      steps: Array.isArray(recipe.steps) ? recipe.steps : [],
-      photoUrl: photos[i]?.url ?? null,
-    })),
+    recipes: recipes.map((recipe, i) => {
+      const servings = recipe.servings ?? 2;
+      const n = recipe.nutrition;
+      // The model estimates nutrition for the WHOLE recipe; dividing by
+      // servings here (in code, not left to the model) is the one place
+      // that division needs to happen, so it can't drift from whatever
+      // servings count actually got returned.
+      const nutritionPerServing =
+        n &&
+        Number.isFinite(n.calories) &&
+        Number.isFinite(n.proteinG) &&
+        Number.isFinite(n.carbsG) &&
+        Number.isFinite(n.fatG) &&
+        servings > 0
+          ? {
+              calories: Math.round(n.calories / servings),
+              proteinG: Math.round((n.proteinG / servings) * 10) / 10,
+              carbsG: Math.round((n.carbsG / servings) * 10) / 10,
+              fatG: Math.round((n.fatG / servings) * 10) / 10,
+            }
+          : null;
+
+      return {
+        title: recipe.title ?? craving,
+        servings,
+        time: recipe.time ?? "",
+        steps: Array.isArray(recipe.steps) ? recipe.steps : [],
+        photoUrl: photos[i]?.url ?? null,
+        photoSource: photos[i]?.source ?? null,
+        nutrition: nutritionPerServing,
+      };
+    }),
     shoppingList: {
       list: matches.map((m) => ({
         ingredient: m.ingredient,
