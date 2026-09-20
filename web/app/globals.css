@@ -150,6 +150,7 @@ body {
    split into separate cells (one per recipe, so photos can line up). */
 .paperBackdrop {
   grid-column: 1;
+  align-self: stretch;
   background: var(--paper);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
   z-index: 0;
