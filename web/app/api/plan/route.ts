@@ -71,18 +71,30 @@ async function findDishPhoto(
     const direct = await trySummary(query);
     if (direct) return direct;
 
+    // Wikipedia's title-prefix search (opensearch) can't connect a
+    // colloquial name to its real article unless the words line up at
+    // the start ("chicken alfredo" won't suggest "Fettuccine Alfredo").
+    // Full-text search matches against article content instead, so it
+    // finds dishes described under a different, more "encyclopedic"
+    // title. Try a few of the top hits in case the very first one is a
+    // list/stub page with no photo of its own.
     const searchRes = await fetch(
-      `https://en.wikipedia.org/w/api.php?action=opensearch&format=json&limit=1&search=${encodeURIComponent(
+      `https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srlimit=3&srsearch=${encodeURIComponent(
         query
       )}`,
       { headers }
     );
     if (!searchRes.ok) return null;
     const searchData = await searchRes.json();
-    const bestTitle = searchData?.[1]?.[0];
-    if (!bestTitle) return null;
+    const candidates: string[] = (searchData?.query?.search ?? []).map(
+      (r: { title: string }) => r.title
+    );
 
-    return await trySummary(bestTitle);
+    for (const title of candidates) {
+      const found = await trySummary(title);
+      if (found) return found;
+    }
+    return null;
   } catch (err) {
     console.error("Wikipedia photo lookup failed", query, err);
     return null;
