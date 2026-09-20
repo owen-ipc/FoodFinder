@@ -307,9 +307,17 @@ function expand(ingredient: string): string[] {
     if (!exact && !partial) continue;
 
     const mapped = SYNONYMS[k];
-    if (mapped.length === 0) return [];
 
-    if (exact) return [...new Set(tokens(mapped.join(" ")))];
+    if (exact) {
+      // Empty mapping means "assume the person already has this" (plain
+      // water, etc.) -- but only when that's the WHOLE ingredient. A
+      // partial hit (below) means "water" is a modifier inside a real
+      // product name, like "sparkling water" or "coconut water", and
+      // must not be silently skipped.
+      if (mapped.length === 0) return [];
+      return [...new Set(tokens(mapped.join(" ")))];
+    }
+    if (mapped.length === 0) continue;
 
     // Partial: keep the rest of the phrase alongside the mapping.
     const rest = clean.replace(new RegExp(`(^|\\s)${k}($|\\s)`), " ");
