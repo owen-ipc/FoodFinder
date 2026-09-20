@@ -278,7 +278,8 @@ const CATEGORY_HINTS: Array<[string[], string[]]> = [
   [["salsa"], ["Sauces"]],
   [["mayonnaise","mayo","ketchup","mustard","relish","hotsauce"], ["Condiments"]],
   [["cinnamon","paprika","cumin","oregano","thyme","turmeric","nutmeg",
-    "chili","curry","cayenne","salt","peppercorn","bay","clove","seasoning"],
+    "chili","curry","cayenne","salt","peppercorn","pepper","bay","clove",
+    "seasoning"],
    ["Seasonings & Spices"]],
   [["sugar","yeast","cocoa","vanilla","starch","shortening","frosting",
     "flour","granulated","powder","soda"],
@@ -460,4 +461,41 @@ export function buildShoppingList(
   const missing = matches.filter((m) => !m.item).map((m) => m.ingredient);
   const savings = matches.reduce((sum, m) => sum + m.saved, 0);
   return { matches, total, missing, savings };
+}
+
+/**
+ * Same as buildShoppingList, but for ingredients pooled across several
+ * recipes. If two recipes both call for milk, the shopper only needs to
+ * buy one carton -- so once an ingredient resolves to a Target product
+ * that's already in the list, later lines matching that SAME product are
+ * dropped rather than priced again. Matching is per-ingredient-string (as
+ * always); the dedupe happens afterward, keyed on the resolved item.
+ */
+export function buildCombinedShoppingList(
+  ingredients: string[],
+  pantry: Item[]
+): { matches: Match[]; total: number; missing: string[]; savings: number } {
+  const matches = ingredients.map((i) => matchIngredient(i, pantry));
+
+  const seenProducts = new Set<string>();
+  const seenMissing = new Set<string>();
+  const deduped: Match[] = [];
+
+  for (const m of matches) {
+    if (m.item) {
+      if (seenProducts.has(m.item.name)) continue;
+      seenProducts.add(m.item.name);
+      deduped.push(m);
+    } else {
+      const key = m.ingredient.trim().toLowerCase();
+      if (seenMissing.has(key)) continue;
+      seenMissing.add(key);
+      deduped.push(m);
+    }
+  }
+
+  const total = deduped.reduce((sum, m) => sum + (m.item?.price ?? 0), 0);
+  const missing = deduped.filter((m) => !m.item).map((m) => m.ingredient);
+  const savings = deduped.reduce((sum, m) => sum + m.saved, 0);
+  return { matches: deduped, total, missing, savings };
 }
