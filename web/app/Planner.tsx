@@ -7,6 +7,7 @@ type RecipeMeta = {
   servings: number;
   time: string;
   steps: string[];
+  photoUrl: string | null;
 };
 
 type Row = {
@@ -278,11 +279,24 @@ export default function Planner({ totalItems, exactItems }: Props) {
       {recipes ? (
         recipes.map((recipe, i) => (
           <div className="board" style={{ gridRow: firstRecipeRow + i }} key={i}>
-            <div className="photoFrame">
-              <PhotoIcon />
-              <div className="photoLabel">recipe photo goes here</div>
-            </div>
+            {recipe.photoUrl ? (
+              <div className="photoFrame hasPhoto">
+                <img
+                  src={recipe.photoUrl}
+                  alt={recipe.title}
+                  className="photoImg"
+                />
+              </div>
+            ) : (
+              <div className="photoFrame">
+                <PhotoIcon />
+                <div className="photoLabel">recipe photo goes here</div>
+              </div>
+            )}
             <div className="boardCaption">{recipe.title}</div>
+            {recipe.photoUrl && (
+              <p className="photoCredit">photo via Wikipedia</p>
+            )}
             <ChopCorner />
           </div>
         ))
