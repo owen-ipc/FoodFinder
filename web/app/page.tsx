@@ -1,5 +1,6 @@
 import { loadPantry } from "@/lib/pantry";
 import Planner from "./Planner";
+import KitchenBackdrop from "./KitchenBackdrop";
 
 export default function Home() {
   const items = loadPantry();
@@ -12,22 +13,8 @@ export default function Home() {
 
   return (
     <main className="wrap">
-      <header className="head">
-        <h1 className="title">Food Finder</h1>
-        <p className="sub">
-          Say what you want to eat. You get a recipe and the cheapest way to
-          buy it at Target, priced from {items.length.toLocaleString()} items we
-          checked by hand.
-        </p>
-      </header>
-
-      <Planner />
-
-      <footer className="foot">
-        {items.length.toLocaleString()} items priced · {exact.toLocaleString()}{" "}
-        confirmed against a live Target listing · Pittsburgh stores, September
-        2026<br /><i>Made for SteelHacks XIII by Ranjan D., Owen A., & Caleb W.</i>
-      </footer>
+      <KitchenBackdrop />
+      <Planner totalItems={items.length} exactItems={exact} />
     </main>
   );
 }
