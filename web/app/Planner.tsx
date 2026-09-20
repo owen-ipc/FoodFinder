@@ -128,10 +128,13 @@ export default function Planner({ totalItems, exactItems }: Props) {
       <div className="paperBackdrop" style={{ gridRow: backdropSpan }} />
 
       <div className="paperCell headCell" style={{ gridRow: HEAD_ROW }}>
-        <div className="wordmark">
-          <span className="food">Food</span>
-          <span className="finder">Finder</span>
-        </div>
+        <img
+          src="/foodfinder-logo.png"
+          alt="FoodFinder"
+          className="wordmark"
+          width={2432}
+          height={644}
+        />
         <p className="tagline">What do you want to eat?</p>
 
         <div className="ask">
