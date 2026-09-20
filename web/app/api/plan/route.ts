@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { loadPantry, buildShoppingList } from "@/lib/pantry";
+import { loadPantry, buildCombinedShoppingList } from "@/lib/pantry";
 
 type Recipe = {
   title: string;
@@ -22,6 +22,10 @@ How many recipes to put in the array:
 - If the request describes ONE dish or craving, return exactly one recipe.
 - If the request asks for several separate items ("3 breakfast ideas", "2 dinner options", "5 snacks"), return that many DISTINCT recipes -- each a complete, different dish with its own ingredients and steps, not one recipe that mashes several ideas together.
 - Never return an empty array, and never leave "ingredients" or "steps" empty for any recipe in it.
+
+Rules for each recipe's "servings":
+- Set it to how many people the listed ingredient quantities actually feed. Don't default to 1 out of habit -- if the quantities you listed are enough for two or more people, say so honestly.
+- Only use 1 when the dish is genuinely a single portion by nature (e.g. a single sandwich, a personal smoothie).
 
 Rules for each recipe's "ingredients":
 - Write each one as a quantity plus a plain supermarket name: "1 lb ground beef", "2 cups white rice", "3 cloves garlic".
@@ -124,20 +128,30 @@ export async function POST(req: Request) {
 
   const pantry = loadPantry();
 
-  const plans = recipes.map((recipe) => {
-    const { matches, total, missing, savings } = buildShoppingList(
-      recipe.ingredients,
-      pantry
-    );
-    const perServing = recipe.servings > 0 ? total / recipe.servings : total;
+  // One combined grocery list for everything the recipes need together --
+  // if two recipes both call for milk, that's one carton, not two.
+  const allIngredients = recipes.flatMap((r) => r.ingredients);
+  const { matches, total, missing, savings } = buildCombinedShoppingList(
+    allIngredients,
+    pantry
+  );
 
-    return {
-      recipe: {
-        title: recipe.title ?? craving,
-        servings: recipe.servings ?? 2,
-        time: recipe.time ?? "",
-        steps: Array.isArray(recipe.steps) ? recipe.steps : [],
-      },
+  // "Per serving" only means something when there's exactly one dish --
+  // averaging cost-per-serving across several unrelated recipes would be
+  // a made-up number, so it's left out (null) whenever there's more than one.
+  const perServing =
+    recipes.length === 1 && recipes[0].servings > 0
+      ? total / recipes[0].servings
+      : null;
+
+  return NextResponse.json({
+    recipes: recipes.map((recipe) => ({
+      title: recipe.title ?? craving,
+      servings: recipe.servings ?? 2,
+      time: recipe.time ?? "",
+      steps: Array.isArray(recipe.steps) ? recipe.steps : [],
+    })),
+    shoppingList: {
       list: matches.map((m) => ({
         ingredient: m.ingredient,
         product: m.item?.name ?? null,
@@ -148,11 +162,9 @@ export async function POST(req: Request) {
         altBrand: m.altBrand?.name ?? null,
       })),
       total: Number(total.toFixed(2)),
-      perServing: Number(perServing.toFixed(2)),
+      perServing: perServing === null ? null : Number(perServing.toFixed(2)),
       savings: Number(savings.toFixed(2)),
       missing,
-    };
+    },
   });
-
-  return NextResponse.json({ plans });
 }
