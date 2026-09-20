@@ -41,12 +41,46 @@ Rules for each recipe's "photoQuery":
 - This is separate from "title" -- "title" can be creative ("Fluffy Scrambled Eggs on Toast"), but "photoQuery" must be the plainest, most common English name for the dish, 2-4 words, the way you'd search for a photo of it ("scrambled eggs", "banana pancakes", "chicken fried rice", "grilled cheese sandwich").
 - No adjectives like "fluffy", "cheesy", "quick", "easy" -- just the dish itself.`;
 
-// Looks up a photo for a dish name against Wikipedia's free, keyless
-// summary API. Tries the exact term first; if that page doesn't exist,
-// falls back to Wikipedia's own search to find the closest real article
-// and retries with that title. Returns null (never throws) if nothing
-// usable turns up, so a missing photo never breaks the recipe itself.
-async function findDishPhoto(
+// Looks up a photo for a dish name via a real Google Images search
+// (through SerpApi, since Google's own Custom Search API is closed to
+// new signups and Bing's Search API was retired outright in 2025 -- a
+// direct "just call Google" option doesn't exist anymore). Requires a
+// free SerpApi key (SERPAPI_KEY) -- see the README for setup. Returns
+// null if the key isn't set, the search errors, or nothing comes back,
+// so this never breaks the recipe itself.
+async function findDishPhotoOnGoogle(
+  query: string
+): Promise<{ url: string } | null> {
+  const key = process.env.SERPAPI_KEY;
+  if (!key) return null;
+
+  try {
+    const res = await fetch(
+      `https://serpapi.com/search.json?engine=google_images&q=${encodeURIComponent(
+        query + " food dish"
+      )}&api_key=${key}`
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    const results: Array<{ original?: string; thumbnail?: string }> =
+      data?.images_results ?? [];
+    for (const r of results.slice(0, 5)) {
+      const url = r.original || r.thumbnail;
+      if (url) return { url };
+    }
+    return null;
+  } catch (err) {
+    console.error("SerpApi image lookup failed", query, err);
+    return null;
+  }
+}
+
+// Fallback photo source when SerpApi isn't configured yet, or comes up
+// empty: Wikipedia's free, keyless summary API. Tries the exact term
+// first; if that page doesn't exist, falls back to Wikipedia's own
+// full-text search to find the closest real article and retries with
+// that title. Returns null (never throws) if nothing usable turns up.
+async function findDishPhotoOnWikipedia(
   query: string
 ): Promise<{ url: string; pageTitle: string } | null> {
   const headers = {
@@ -99,6 +133,15 @@ async function findDishPhoto(
     console.error("Wikipedia photo lookup failed", query, err);
     return null;
   }
+}
+
+// Tries a real Google Images result first; falls back to Wikipedia if
+// SerpApi isn't configured yet or comes up empty. Always resolves to
+// either a usable URL or null -- never throws.
+async function findDishPhoto(query: string): Promise<{ url: string } | null> {
+  const google = await findDishPhotoOnGoogle(query);
+  if (google) return google;
+  return await findDishPhotoOnWikipedia(query);
 }
 
 export async function POST(req: Request) {
