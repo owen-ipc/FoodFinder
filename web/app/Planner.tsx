@@ -2,12 +2,21 @@
 
 import { useState } from "react";
 
+type Nutrition = {
+  calories: number;
+  proteinG: number;
+  carbsG: number;
+  fatG: number;
+};
+
 type RecipeMeta = {
   title: string;
   servings: number;
   time: string;
   steps: string[];
   photoUrl: string | null;
+  photoSource: "Google" | "Wikipedia" | null;
+  nutrition: Nutrition | null;
 };
 
 type Row = {
@@ -190,6 +199,27 @@ export default function Planner({ totalItems, exactItems }: Props) {
                 Serves {recipe.servings}
                 {recipe.time ? ` · ${recipe.time}` : ""}
               </p>
+              {recipe.nutrition && (
+                <div className="nutritionBar">
+                  <div className="nutritionCell">
+                    <span className="nutritionLabel">Calories</span>
+                    <span className="nutritionValue">{recipe.nutrition.calories}</span>
+                  </div>
+                  <div className="nutritionCell">
+                    <span className="nutritionLabel">Protein</span>
+                    <span className="nutritionValue">{recipe.nutrition.proteinG}g</span>
+                  </div>
+                  <div className="nutritionCell">
+                    <span className="nutritionLabel">Carbs</span>
+                    <span className="nutritionValue">{recipe.nutrition.carbsG}g</span>
+                  </div>
+                  <div className="nutritionCell">
+                    <span className="nutritionLabel">Fat</span>
+                    <span className="nutritionValue">{recipe.nutrition.fatG}g</span>
+                  </div>
+                  <p className="nutritionCaption">per serving, estimated</p>
+                </div>
+              )}
               {recipe.steps.length > 0 && (
                 <ol className="steps">
                   {recipe.steps.map((s, si) => (
@@ -295,7 +325,7 @@ export default function Planner({ totalItems, exactItems }: Props) {
             )}
             <div className="boardCaption">{recipe.title}</div>
             {recipe.photoUrl && (
-              <p className="photoCredit">photo via Wikipedia</p>
+              <p className="photoCredit">photo via {recipe.photoSource}</p>
             )}
             <ChopCorner />
           </div>
