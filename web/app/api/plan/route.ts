@@ -11,7 +11,9 @@ type Recipe = {
 
 const SYSTEM = `You plan cheap meals that a college student can cook in a dorm or small apartment kitchen.
 
-Return ONLY a JSON object, no prose and no markdown fences:
+Always return exactly ONE JSON object in the exact shape below — never an array, never multiple objects, never a wrapper object with extra keys around it. This applies even if the request describes several dishes, a whole day of eating, or a list of separate items: in that case, pick the single best-fitting dish, or combine the idea into one cohesive recipe that captures the request. Never leave "ingredients" or "steps" empty.
+
+Return ONLY the JSON object, no prose and no markdown fences:
 {
   "title": string,
   "servings": number,
@@ -88,7 +90,22 @@ export async function POST(req: Request) {
       .trim();
 
     const clean = text.replace(/^```(?:json)?/i, "").replace(/```$/, "").trim();
-    recipe = JSON.parse(clean);
+    let parsed = JSON.parse(clean);
+
+    // Defensive unwrap: if the model still returns an array or a wrapper
+    // object despite the system prompt, pull out the first usable recipe
+    // shape instead of failing outright.
+    if (Array.isArray(parsed)) parsed = parsed[0];
+    if (parsed && !Array.isArray(parsed.ingredients)) {
+      parsed =
+        parsed.recipe ??
+        parsed.recipes?.[0] ??
+        parsed.items?.[0] ??
+        parsed.meals?.[0] ??
+        parsed;
+    }
+
+    recipe = parsed;
   } catch (err) {
     console.error("Recipe parse failed", err);
     return NextResponse.json(
