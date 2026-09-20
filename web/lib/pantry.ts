@@ -108,7 +108,7 @@ const STOP = new Set([
   "cups","tbsp","tsp","tablespoon","teaspoon","clove","cloves","bunch",
   "sprig","sprigs","pinch","dash","inch","piece","pieces","thinly","finely",
   "each","per","bag","size","varies","value","pack","bottle","box","bunch",
-  "spice","world","favorite","day","simply","balance","essentials",
+  "spice","world","favorite","day","simply","balance","essentials","on","in",
 ]);
 
 // Maps what a recipe calls something to words that appear in Target names.
@@ -238,7 +238,7 @@ const TYPE_SHIFT = new Set([
   "instant","dehydrated","concentrate","puree","smoked","breaded",
   "spray","nonstick","spread","stick","cube","flake","crunch","crisp",
   "mustard","canadian","tortilla","bun","cracker","waffle","pancake",
-  "ham","wing","bbq","graham","sandwich","deli","slice",
+  "ham","wing","bbq","graham","sandwich","deli","slice","tomato",
 ]);
 
 /**
