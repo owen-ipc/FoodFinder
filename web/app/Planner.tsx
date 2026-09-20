@@ -2,6 +2,13 @@
 
 import { useState } from "react";
 
+type RecipeMeta = {
+  title: string;
+  servings: number;
+  time: string;
+  steps: string[];
+};
+
 type Row = {
   ingredient: string;
   product: string | null;
@@ -12,11 +19,10 @@ type Row = {
   altBrand: string | null;
 };
 
-type Plan = {
-  recipe: { title: string; servings: number; time: string; steps: string[] };
+type ShoppingList = {
   list: Row[];
   total: number;
-  perServing: number;
+  perServing: number | null;
   savings: number;
   missing: string[];
 };
@@ -70,7 +76,8 @@ function ChopCorner() {
 
 export default function Planner({ totalItems, exactItems }: Props) {
   const [craving, setCraving] = useState("");
-  const [plans, setPlans] = useState<Plan[] | null>(null);
+  const [recipes, setRecipes] = useState<RecipeMeta[] | null>(null);
+  const [shoppingList, setShoppingList] = useState<ShoppingList | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -80,7 +87,8 @@ export default function Planner({ totalItems, exactItems }: Props) {
 
     setLoading(true);
     setError(null);
-    setPlans(null);
+    setRecipes(null);
+    setShoppingList(null);
 
     try {
       const res = await fetch("/api/plan", {
@@ -89,8 +97,12 @@ export default function Planner({ totalItems, exactItems }: Props) {
         body: JSON.stringify({ craving: q }),
       });
       const data = await res.json();
-      if (!res.ok) setError(data.error ?? "Something went wrong.");
-      else setPlans(Array.isArray(data.plans) ? data.plans : null);
+      if (!res.ok) {
+        setError(data.error ?? "Something went wrong.");
+      } else {
+        setRecipes(Array.isArray(data.recipes) ? data.recipes : null);
+        setShoppingList(data.shoppingList ?? null);
+      }
     } catch {
       setError("Could not reach the server. Check your connection.");
     } finally {
@@ -98,167 +110,192 @@ export default function Planner({ totalItems, exactItems }: Props) {
     }
   }
 
+  const recipeCount = recipes?.length ?? 0;
+  const hasResults = recipeCount > 0 && shoppingList;
+
+  // Grid row bookkeeping -- kept in one place so the receipt column, the
+  // photo column, and the paper backdrop all agree on where things land.
+  const HEAD_ROW = 2;
+  const firstRecipeRow = HEAD_ROW + 1; // 3
+  const shoppingRow = firstRecipeRow + recipeCount; // right after the last recipe
+  const metaRow = hasResults ? shoppingRow + 1 : firstRecipeRow;
+  const notchBottomRow = metaRow + 1;
+  const backdropSpan = `2 / ${notchBottomRow}`;
+
   return (
     <div className="stage">
-      <div className="receiptCol">
-        <div className="notchTop" />
-        <section className="receipt">
-          <div className="wordmark">
-            <span className="food">Food</span>
-            <span className="finder">Finder</span>
-          </div>
-          <p className="tagline">What do you want to eat?</p>
+      <div className="notchTop" style={{ gridRow: 1 }} />
+      <div className="paperBackdrop" style={{ gridRow: backdropSpan }} />
 
-          <div className="ask">
-            <label className="field">
-              <input
-                value={craving}
-                onChange={(e) => setCraving(e.target.value)}
-                onKeyDown={(e) => e.key === "Enter" && submit(craving)}
-                placeholder="something cheap with chicken"
-                className="input"
-                disabled={loading}
-              />
-            </label>
+      <div className="paperCell headCell" style={{ gridRow: HEAD_ROW }}>
+        <div className="wordmark">
+          <span className="food">Food</span>
+          <span className="finder">Finder</span>
+        </div>
+        <p className="tagline">What do you want to eat?</p>
+
+        <div className="ask">
+          <label className="field">
+            <input
+              value={craving}
+              onChange={(e) => setCraving(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && submit(craving)}
+              placeholder="something cheap with chicken"
+              className="input"
+              disabled={loading}
+            />
+          </label>
+          <button
+            onClick={() => submit(craving)}
+            disabled={loading || !craving.trim()}
+            className="go"
+          >
+            {loading ? "Planning…" : "Plan it"}
+          </button>
+        </div>
+
+        <div className="examples">
+          {EXAMPLES.map((e, i) => (
             <button
-              onClick={() => submit(craving)}
-              disabled={loading || !craving.trim()}
-              className="go"
+              key={e}
+              className={CHIP_ACCENTS[i] ?? "chip"}
+              disabled={loading}
+              onClick={() => {
+                setCraving(e);
+                submit(e);
+              }}
             >
-              {loading ? "Planning…" : "Plan it"}
+              {e}
             </button>
-          </div>
+          ))}
+        </div>
 
-          <div className="examples">
-            {EXAMPLES.map((e, i) => (
-              <button
-                key={e}
-                className={CHIP_ACCENTS[i] ?? "chip"}
-                disabled={loading}
-                onClick={() => {
-                  setCraving(e);
-                  submit(e);
-                }}
-              >
-                {e}
-              </button>
-            ))}
-          </div>
-
-          {error && <p className="error">{error}</p>}
-
-          {plans &&
-            plans.map((plan, planIndex) => (
-              <article className="plan" key={planIndex}>
-                <header className="planHead">
-                  <h2 className="planTitle">{plan.recipe.title}</h2>
-                  <p className="planMeta">
-                    Serves {plan.recipe.servings}
-                    {plan.recipe.time ? ` · ${plan.recipe.time}` : ""}
-                  </p>
-                </header>
-
-                <div className="priceBar">
-                  <div>
-                    <span className="priceLabel">Total at Target</span>
-                    <span className="priceBig">${plan.total.toFixed(2)}</span>
-                  </div>
-                  <div>
-                    <span className="priceLabel">Per serving</span>
-                    <span className="priceBig">${plan.perServing.toFixed(2)}</span>
-                  </div>
-                </div>
-
-                {plan.savings > 0 && (
-                  <p className="savingsLine">
-                    saved ${plan.savings.toFixed(2)} buying store brand over
-                    name brand on this list
-                  </p>
-                )}
-
-                <h3 className="sectionHead">Shopping list</h3>
-                <ul className="list">
-                  {plan.list.map((r, i) => (
-                    <li key={i} className="row">
-                      <div className="rowTop">
-                        <span
-                          className={r.saved > 0 ? "rowName rowSaved" : "rowName"}
-                        >
-                          {r.ingredient}
-                        </span>
-                        <span className="rowFill" />
-                        <span className={r.price === null ? "rowNone" : "rowPrice"}>
-                          {r.price === null ? "—" : `$${r.price.toFixed(2)}`}
-                        </span>
-                      </div>
-                      <div className="rowSub">
-                        <span className="rowMeta">
-                          {r.product ? `${r.product} · ${r.unit}` : "Not sold at Target"}
-                        </span>
-                        {r.saved > 0 && (
-                          <span className="rowSavedNote">
-                            saved ${r.saved.toFixed(2)} vs {r.altBrand}
-                          </span>
-                        )}
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-
-                {plan.missing.length > 0 && (
-                  <p className="note">
-                    No Target match for: {plan.missing.join(", ")}. Those are
-                    left out of the total.
-                  </p>
-                )}
-
-                {plan.recipe.steps.length > 0 && (
-                  <>
-                    <h3 className="sectionHead">How to make it</h3>
-                    <ol className="steps">
-                      {plan.recipe.steps.map((s, i) => (
-                        <li key={i}>{s}</li>
-                      ))}
-                    </ol>
-                  </>
-                )}
-              </article>
-            ))}
-
-          <p className="meta">
-            {totalItems.toLocaleString()} items priced · {exactItems.toLocaleString()}{" "}
-            confirmed against a live Target listing · Pittsburgh stores,
-            September 2026
-          </p>
-        </section>
-        <div className="notchBottom" />
+        {error && <p className="error">{error}</p>}
       </div>
 
-      <div className="photoCol">
-        {plans && plans.length > 0 ? (
-          plans.map((plan, i) => (
-            <div className="board" key={i}>
-              <div className="photoFrame">
-                <PhotoIcon />
-                <div className="photoLabel">recipe photo goes here</div>
-              </div>
-              <div className="boardCaption">{plan.recipe.title}</div>
-              <ChopCorner />
+      {recipes &&
+        recipes.map((recipe, i) => (
+          <div
+            className="paperCell recipeCell"
+            style={{ gridRow: firstRecipeRow + i }}
+            key={i}
+          >
+            <div className="recipeCard">
+              <h2 className="planTitle">{recipe.title}</h2>
+              <p className="planMeta">
+                Serves {recipe.servings}
+                {recipe.time ? ` · ${recipe.time}` : ""}
+              </p>
+              {recipe.steps.length > 0 && (
+                <ol className="steps">
+                  {recipe.steps.map((s, si) => (
+                    <li key={si}>{s}</li>
+                  ))}
+                </ol>
+              )}
             </div>
-          ))
-        ) : (
-          <div className="board">
-            <div className="photoFrame">
-              <PhotoIcon />
-              <div className="photoLabel">your recipe photo will show up here</div>
-            </div>
-            <ChopCorner />
           </div>
-        )}
-        <p className="credit">
-          Made for SteelHacks XIII by Ranjan D., Owen A., &amp; Caleb W.
+        ))}
+
+      {hasResults && (
+        <div className="paperCell shoppingCell" style={{ gridRow: shoppingRow }}>
+          <div className="divider" />
+          <div className="priceBar">
+            <div>
+              <span className="priceLabel">
+                {recipeCount > 1 ? "Total to make all of this" : "Total at Target"}
+              </span>
+              <span className="priceBig">${shoppingList!.total.toFixed(2)}</span>
+            </div>
+            {shoppingList!.perServing !== null && (
+              <div>
+                <span className="priceLabel">Per serving</span>
+                <span className="priceBig">
+                  ${shoppingList!.perServing.toFixed(2)}
+                </span>
+              </div>
+            )}
+          </div>
+
+          {shoppingList!.savings > 0 && (
+            <p className="savingsLine">
+              saved ${shoppingList!.savings.toFixed(2)} buying store brand
+              over name brand on this list
+            </p>
+          )}
+
+          <h3 className="sectionHead">
+            {recipeCount > 1 ? "Combined shopping list" : "Shopping list"}
+          </h3>
+          <ul className="list">
+            {shoppingList!.list.map((r, i) => (
+              <li key={i} className="row">
+                <div className="rowTop">
+                  <span className={r.saved > 0 ? "rowName rowSaved" : "rowName"}>
+                    {r.ingredient}
+                  </span>
+                  <span className="rowFill" />
+                  <span className={r.price === null ? "rowNone" : "rowPrice"}>
+                    {r.price === null ? "—" : `$${r.price.toFixed(2)}`}
+                  </span>
+                </div>
+                <div className="rowSub">
+                  <span className="rowMeta">
+                    {r.product ? `${r.product} · ${r.unit}` : "Not sold at Target"}
+                  </span>
+                  {r.saved > 0 && (
+                    <span className="rowSavedNote">
+                      saved ${r.saved.toFixed(2)} vs {r.altBrand}
+                    </span>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+
+          {shoppingList!.missing.length > 0 && (
+            <p className="note">
+              No Target match for: {shoppingList!.missing.join(", ")}. Those
+              are left out of the total.
+            </p>
+          )}
+        </div>
+      )}
+
+      <div className="paperCell lastCell" style={{ gridRow: metaRow }}>
+        <p className="meta">
+          {totalItems.toLocaleString()} items priced · {exactItems.toLocaleString()}{" "}
+          confirmed against a live Target listing · Pittsburgh stores,
+          September 2026
         </p>
       </div>
+
+      <div className="notchBottom" style={{ gridRow: notchBottomRow }} />
+
+      {recipes ? (
+        recipes.map((recipe, i) => (
+          <div className="board" style={{ gridRow: firstRecipeRow + i }} key={i}>
+            <div className="photoFrame">
+              <PhotoIcon />
+              <div className="photoLabel">recipe photo goes here</div>
+            </div>
+            <div className="boardCaption">{recipe.title}</div>
+            <ChopCorner />
+          </div>
+        ))
+      ) : (
+        <div className="board" style={{ gridRow: HEAD_ROW }}>
+          <div className="photoFrame">
+            <PhotoIcon />
+            <div className="photoLabel">your recipe photo will show up here</div>
+          </div>
+          <ChopCorner />
+        </div>
+      )}
+
+      <p className="credit" style={{ gridRow: metaRow }}>
+        Made for SteelHacks XIII by Ranjan D., Owen A., &amp; Caleb W.
+      </p>
     </div>
   );
 }
