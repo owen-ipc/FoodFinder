@@ -7,6 +7,7 @@ type Recipe = {
   time: string;
   ingredients: string[];
   steps: string[];
+  photoQuery?: string;
 };
 
 const SYSTEM = `You plan cheap meals that a college student can cook in a dorm or small apartment kitchen.
@@ -14,7 +15,7 @@ const SYSTEM = `You plan cheap meals that a college student can cook in a dorm o
 Always return this exact JSON shape, no prose and no markdown fences:
 {
   "recipes": [
-    { "title": string, "servings": number, "time": string, "ingredients": string[], "steps": string[] }
+    { "title": string, "servings": number, "time": string, "ingredients": string[], "steps": string[], "photoQuery": string }
   ]
 }
 
@@ -34,7 +35,59 @@ Rules for each recipe's "ingredients":
 - Do not list water, or equipment.
 - Prefer cheap staples. This is for someone on a tight budget.
 
-Rules for each recipe's "steps": 4 to 8 short imperative sentences.`;
+Rules for each recipe's "steps": 4 to 8 short imperative sentences.
+
+Rules for each recipe's "photoQuery":
+- This is separate from "title" -- "title" can be creative ("Fluffy Scrambled Eggs on Toast"), but "photoQuery" must be the plainest, most common English name for the dish, 2-4 words, the way you'd search for a photo of it ("scrambled eggs", "banana pancakes", "chicken fried rice", "grilled cheese sandwich").
+- No adjectives like "fluffy", "cheesy", "quick", "easy" -- just the dish itself.`;
+
+// Looks up a photo for a dish name against Wikipedia's free, keyless
+// summary API. Tries the exact term first; if that page doesn't exist,
+// falls back to Wikipedia's own search to find the closest real article
+// and retries with that title. Returns null (never throws) if nothing
+// usable turns up, so a missing photo never breaks the recipe itself.
+async function findDishPhoto(
+  query: string
+): Promise<{ url: string; pageTitle: string } | null> {
+  const headers = {
+    "user-agent": "FoodFinder/1.0 (SteelHacks XIII student project)",
+  };
+
+  async function trySummary(title: string) {
+    const res = await fetch(
+      `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(
+        title.trim().replace(/\s+/g, "_")
+      )}?redirect=true`,
+      { headers }
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    if (data?.type === "disambiguation") return null;
+    const src = data?.thumbnail?.source;
+    return src ? { url: src as string, pageTitle: data.title as string } : null;
+  }
+
+  try {
+    const direct = await trySummary(query);
+    if (direct) return direct;
+
+    const searchRes = await fetch(
+      `https://en.wikipedia.org/w/api.php?action=opensearch&format=json&limit=1&search=${encodeURIComponent(
+        query
+      )}`,
+      { headers }
+    );
+    if (!searchRes.ok) return null;
+    const searchData = await searchRes.json();
+    const bestTitle = searchData?.[1]?.[0];
+    if (!bestTitle) return null;
+
+    return await trySummary(bestTitle);
+  } catch (err) {
+    console.error("Wikipedia photo lookup failed", query, err);
+    return null;
+  }
+}
 
 export async function POST(req: Request) {
   let craving = "";
@@ -144,12 +197,19 @@ export async function POST(req: Request) {
       ? total / recipes[0].servings
       : null;
 
+  // Photo lookups run in parallel across all recipes -- a miss on one
+  // never blocks or breaks the others, and never blocks the recipe text.
+  const photos = await Promise.all(
+    recipes.map((r) => findDishPhoto(r.photoQuery || r.title))
+  );
+
   return NextResponse.json({
-    recipes: recipes.map((recipe) => ({
+    recipes: recipes.map((recipe, i) => ({
       title: recipe.title ?? craving,
       servings: recipe.servings ?? 2,
       time: recipe.time ?? "",
       steps: Array.isArray(recipe.steps) ? recipe.steps : [],
+      photoUrl: photos[i]?.url ?? null,
     })),
     shoppingList: {
       list: matches.map((m) => ({
