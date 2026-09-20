@@ -464,6 +464,9 @@ body {
 
 .board {
   grid-column: 2;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
   position: relative;
   background: var(--board);
   border-radius: 22px;
@@ -485,6 +488,7 @@ body {
 }
 
 .photoFrame {
+  flex: 1;
   margin-top: 1.6rem;
   border: 2.5px dashed var(--paper);
   border-radius: 12px;
