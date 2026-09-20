@@ -448,6 +448,9 @@ body {
   width: 100%;
   max-width: 280px;
   padding-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
 }
 
 .board {
