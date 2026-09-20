@@ -122,20 +122,17 @@ body {
   z-index: 1;
   max-width: 780px;
   margin: 0 auto;
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: minmax(0, 400px) minmax(0, 280px);
+  column-gap: 1.75rem;
+  row-gap: 0.9rem;
+  align-items: start;
   justify-content: center;
-  gap: 1.75rem;
-  flex-wrap: wrap;
-}
-
-.receiptCol {
-  width: 100%;
-  max-width: 400px;
 }
 
 .notchTop,
 .notchBottom {
+  grid-column: 1;
   height: 12px;
   background-image: linear-gradient(135deg, transparent 50%, var(--paper) 50%),
     linear-gradient(-135deg, transparent 50%, var(--paper) 50%);
@@ -147,11 +144,35 @@ body {
   transform: rotate(180deg);
 }
 
-.receipt {
+/* One continuous "sheet" behind every receipt-column cell. A grid item
+   that spans several rows still covers the row-gap between them, so this
+   reads as a single paper sheet even though the content above it is
+   split into separate cells (one per recipe, so photos can line up). */
+.paperBackdrop {
+  grid-column: 1;
   background: var(--paper);
-  color: var(--ink);
-  padding: 2rem 1.75rem 0.4rem;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  z-index: 0;
+}
+
+.paperCell {
+  grid-column: 1;
+  position: relative;
+  z-index: 1;
+  padding: 0 1.75rem;
+}
+
+.paperCell.headCell {
+  padding-top: 2rem;
+}
+
+.paperCell.lastCell {
+  padding-bottom: 0.4rem;
+}
+
+.recipeCard {
+  padding-top: 1.1rem;
+  border-top: 1.5px dashed var(--rule);
 }
 
 /* ---------------------------------------------------------------- */
@@ -287,14 +308,9 @@ body {
 /* plan / results                                                    */
 /* ---------------------------------------------------------------- */
 
-.plan {
+.divider {
   border-top: 1.5px dashed var(--rule);
-  margin-top: -0.2rem;
-  padding-top: 1.25rem;
-}
-
-.planHead {
-  margin-bottom: 0.9rem;
+  margin: 0 0 1.1rem;
 }
 
 .planTitle {
@@ -311,7 +327,7 @@ body {
 
 .priceBar {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1px;
   margin-bottom: 0.9rem;
 }
@@ -441,19 +457,12 @@ body {
 }
 
 /* ---------------------------------------------------------------- */
-/* photo column                                                       */
+/* photo column -- boards are direct grid children now, one per      */
+/* recipe row, so they line up with the recipe they belong to        */
 /* ---------------------------------------------------------------- */
 
-.photoCol {
-  width: 100%;
-  max-width: 280px;
-  padding-top: 1.4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.4rem;
-}
-
 .board {
+  grid-column: 2;
   position: relative;
   background: var(--board);
   border-radius: 22px;
@@ -549,6 +558,7 @@ body {
 }
 
 .credit {
+  grid-column: 2;
   text-align: center;
   font-size: 0.7rem;
   color: var(--paper);
@@ -556,8 +566,20 @@ body {
   margin-top: 1rem;
 }
 
+/* Below this width there isn't room for two real columns. Fall back to
+   one column, natural top-to-bottom order -- this loses the per-recipe
+   image alignment, but that's a reasonable trade for not overlapping. */
 @media (max-width: 45rem) {
-  .photoCol {
-    max-width: 400px;
+  .stage {
+    grid-template-columns: 1fr;
+  }
+  .board,
+  .paperCell,
+  .paperBackdrop,
+  .notchTop,
+  .notchBottom,
+  .credit {
+    grid-column: 1;
+    grid-row: auto !important;
   }
 }
