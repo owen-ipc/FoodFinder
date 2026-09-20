@@ -38,9 +38,39 @@ const CHIP_ACCENTS: Record<number, string> = {
   3: "chip cGrape",
 };
 
+function PhotoIcon() {
+  return (
+    <svg width="56" height="56" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="22" fill="none" stroke="#f2ead8" strokeWidth="2.5" />
+      <circle cx="32" cy="32" r="13" fill="none" stroke="#f2ead8" strokeWidth="2" />
+      <line x1="10" y1="10" x2="10" y2="26" stroke="#f2ead8" strokeWidth="2" strokeLinecap="round" />
+      <line x1="6" y1="10" x2="6" y2="20" stroke="#f2ead8" strokeWidth="2" strokeLinecap="round" />
+      <line x1="14" y1="10" x2="14" y2="20" stroke="#f2ead8" strokeWidth="2" strokeLinecap="round" />
+      <path d="M54 10c4 4 4 12 0 16v20" stroke="#f2ead8" strokeWidth="2" fill="none" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function ChopCorner() {
+  return (
+    <div className="chopCorner">
+      <svg width="90" height="60" viewBox="0 0 90 60">
+        <circle cx="24" cy="38" r="5" fill="#ff9f45" className="chopBit" style={{ animationDelay: "0.05s" }} />
+        <circle cx="34" cy="36" r="5" fill="#ff9f45" className="chopBit" style={{ animationDelay: "0.2s" }} />
+        <circle cx="28" cy="46" r="4" fill="#ff9f45" className="chopBit" style={{ animationDelay: "0.35s" }} />
+        <ellipse cx="10" cy="40" rx="14" ry="7" fill="#e2873d" />
+        <g className="knifeGroup">
+          <rect x="66" y="16" width="30" height="6" rx="2" fill="#c9a24a" />
+          <path d="M66 16 L14 38 L18 46 L66 22 Z" fill="#d9d9d9" />
+        </g>
+      </svg>
+    </div>
+  );
+}
+
 export default function Planner({ totalItems, exactItems }: Props) {
   const [craving, setCraving] = useState("");
-  const [plan, setPlan] = useState<Plan | null>(null);
+  const [plans, setPlans] = useState<Plan[] | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -50,7 +80,7 @@ export default function Planner({ totalItems, exactItems }: Props) {
 
     setLoading(true);
     setError(null);
-    setPlan(null);
+    setPlans(null);
 
     try {
       const res = await fetch("/api/plan", {
@@ -60,7 +90,7 @@ export default function Planner({ totalItems, exactItems }: Props) {
       });
       const data = await res.json();
       if (!res.ok) setError(data.error ?? "Something went wrong.");
-      else setPlan(data);
+      else setPlans(Array.isArray(data.plans) ? data.plans : null);
     } catch {
       setError("Could not reach the server. Check your connection.");
     } finally {
@@ -117,82 +147,83 @@ export default function Planner({ totalItems, exactItems }: Props) {
 
           {error && <p className="error">{error}</p>}
 
-          {plan && (
-            <article className="plan">
-              <header className="planHead">
-                <h2 className="planTitle">{plan.recipe.title}</h2>
-                <p className="planMeta">
-                  Serves {plan.recipe.servings}
-                  {plan.recipe.time ? ` · ${plan.recipe.time}` : ""}
-                </p>
-              </header>
+          {plans &&
+            plans.map((plan, planIndex) => (
+              <article className="plan" key={planIndex}>
+                <header className="planHead">
+                  <h2 className="planTitle">{plan.recipe.title}</h2>
+                  <p className="planMeta">
+                    Serves {plan.recipe.servings}
+                    {plan.recipe.time ? ` · ${plan.recipe.time}` : ""}
+                  </p>
+                </header>
 
-              <div className="priceBar">
-                <div>
-                  <span className="priceLabel">Total at Target</span>
-                  <span className="priceBig">${plan.total.toFixed(2)}</span>
+                <div className="priceBar">
+                  <div>
+                    <span className="priceLabel">Total at Target</span>
+                    <span className="priceBig">${plan.total.toFixed(2)}</span>
+                  </div>
+                  <div>
+                    <span className="priceLabel">Per serving</span>
+                    <span className="priceBig">${plan.perServing.toFixed(2)}</span>
+                  </div>
                 </div>
-                <div>
-                  <span className="priceLabel">Per serving</span>
-                  <span className="priceBig">${plan.perServing.toFixed(2)}</span>
-                </div>
-              </div>
 
-              {plan.savings > 0 && (
-                <p className="savingsLine">
-                  saved ${plan.savings.toFixed(2)} buying store brand over
-                  name brand on this list
-                </p>
-              )}
+                {plan.savings > 0 && (
+                  <p className="savingsLine">
+                    saved ${plan.savings.toFixed(2)} buying store brand over
+                    name brand on this list
+                  </p>
+                )}
 
-              <h3 className="sectionHead">Shopping list</h3>
-              <ul className="list">
-                {plan.list.map((r, i) => (
-                  <li key={i} className="row">
-                    <div className="rowTop">
-                      <span
-                        className={r.saved > 0 ? "rowName rowSaved" : "rowName"}
-                      >
-                        {r.ingredient}
-                      </span>
-                      <span className="rowFill" />
-                      <span className={r.price === null ? "rowNone" : "rowPrice"}>
-                        {r.price === null ? "—" : `$${r.price.toFixed(2)}`}
-                      </span>
-                    </div>
-                    <div className="rowSub">
-                      <span className="rowMeta">
-                        {r.product ? `${r.product} · ${r.unit}` : "Not sold at Target"}
-                      </span>
-                      {r.saved > 0 && (
-                        <span className="rowSavedNote">
-                          saved ${r.saved.toFixed(2)} vs {r.altBrand}
+                <h3 className="sectionHead">Shopping list</h3>
+                <ul className="list">
+                  {plan.list.map((r, i) => (
+                    <li key={i} className="row">
+                      <div className="rowTop">
+                        <span
+                          className={r.saved > 0 ? "rowName rowSaved" : "rowName"}
+                        >
+                          {r.ingredient}
                         </span>
-                      )}
-                    </div>
-                  </li>
-                ))}
-              </ul>
+                        <span className="rowFill" />
+                        <span className={r.price === null ? "rowNone" : "rowPrice"}>
+                          {r.price === null ? "—" : `$${r.price.toFixed(2)}`}
+                        </span>
+                      </div>
+                      <div className="rowSub">
+                        <span className="rowMeta">
+                          {r.product ? `${r.product} · ${r.unit}` : "Not sold at Target"}
+                        </span>
+                        {r.saved > 0 && (
+                          <span className="rowSavedNote">
+                            saved ${r.saved.toFixed(2)} vs {r.altBrand}
+                          </span>
+                        )}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
 
-              {plan.missing.length > 0 && (
-                <p className="note">
-                  No Target match for: {plan.missing.join(", ")}. Those are
-                  left out of the total.
-                </p>
-              )}
+                {plan.missing.length > 0 && (
+                  <p className="note">
+                    No Target match for: {plan.missing.join(", ")}. Those are
+                    left out of the total.
+                  </p>
+                )}
 
-              {plan.recipe.steps.length > 0 && (
-                <>
-                  <h3 className="sectionHead">How to make it</h3>
-                  <ol className="steps">
-                    {plan.recipe.steps.map((s, i) => (
-                      <li key={i}>{s}</li>
-                    ))}
-                  </ol>
-                </>
-              )}
-            </article>
-          )}
+                {plan.recipe.steps.length > 0 && (
+                  <>
+                    <h3 className="sectionHead">How to make it</h3>
+                    <ol className="steps">
+                      {plan.recipe.steps.map((s, i) => (
+                        <li key={i}>{s}</li>
+                      ))}
+                    </ol>
+                  </>
+                )}
+              </article>
+            ))}
 
           <p className="meta">
             {totalItems.toLocaleString()} items priced · {exactItems.toLocaleString()}{" "}
@@ -204,34 +235,26 @@ export default function Planner({ totalItems, exactItems }: Props) {
       </div>
 
       <div className="photoCol">
-        <div className="board">
-          <div className="photoFrame">
-            <svg width="56" height="56" viewBox="0 0 64 64">
-              <circle cx="32" cy="32" r="22" fill="none" stroke="#f2ead8" strokeWidth="2.5" />
-              <circle cx="32" cy="32" r="13" fill="none" stroke="#f2ead8" strokeWidth="2" />
-              <line x1="10" y1="10" x2="10" y2="26" stroke="#f2ead8" strokeWidth="2" strokeLinecap="round" />
-              <line x1="6" y1="10" x2="6" y2="20" stroke="#f2ead8" strokeWidth="2" strokeLinecap="round" />
-              <line x1="14" y1="10" x2="14" y2="20" stroke="#f2ead8" strokeWidth="2" strokeLinecap="round" />
-              <path d="M54 10c4 4 4 12 0 16v20" stroke="#f2ead8" strokeWidth="2" fill="none" strokeLinecap="round" />
-            </svg>
-            <div className="photoLabel">
-              {plan ? "recipe photo goes here" : "your recipe photo will show up here"}
+        {plans && plans.length > 0 ? (
+          plans.map((plan, i) => (
+            <div className="board" key={i}>
+              <div className="photoFrame">
+                <PhotoIcon />
+                <div className="photoLabel">recipe photo goes here</div>
+              </div>
+              <div className="boardCaption">{plan.recipe.title}</div>
+              <ChopCorner />
             </div>
+          ))
+        ) : (
+          <div className="board">
+            <div className="photoFrame">
+              <PhotoIcon />
+              <div className="photoLabel">your recipe photo will show up here</div>
+            </div>
+            <ChopCorner />
           </div>
-          {plan && <div className="boardCaption">{plan.recipe.title}</div>}
-          <div className="chopCorner">
-            <svg width="90" height="60" viewBox="0 0 90 60">
-              <circle cx="24" cy="38" r="5" fill="#ff9f45" className="chopBit" style={{ animationDelay: "0.05s" }} />
-              <circle cx="34" cy="36" r="5" fill="#ff9f45" className="chopBit" style={{ animationDelay: "0.2s" }} />
-              <circle cx="28" cy="46" r="4" fill="#ff9f45" className="chopBit" style={{ animationDelay: "0.35s" }} />
-              <ellipse cx="10" cy="40" rx="14" ry="7" fill="#e2873d" />
-              <g className="knifeGroup">
-                <rect x="66" y="16" width="30" height="6" rx="2" fill="#c9a24a" />
-                <path d="M66 16 L14 38 L18 46 L66 22 Z" fill="#d9d9d9" />
-              </g>
-            </svg>
-          </div>
-        </div>
+        )}
         <p className="credit">
           Made for SteelHacks XIII by Ranjan D., Owen A., &amp; Caleb W.
         </p>
